@@ -1,0 +1,32 @@
+
+include lib/_var.pug
+include lib/_mixin.pug
+<!DOCTYPE html>
+html(lang="es")
+ include base/_head.pug
+  title Conex
+ body.o-colorIndex
+
+  // page
+  .o
+   .o-container
+    .o-navAndContent
+     //menu desktop
+     .o-nav.d-none.d-lg-flex
+      div
+       div(style="width: 64px;")
+         .o-navFixedContainer
+           include base/_header.pug
+           //- include components/_menu.pug
+       div
+        .a-curtain
+     // menu md-sm
+     .o-nav.d-flex.d-lg-none
+      include components/_menu_md.pug
+
+     //Contenido
+     include components/_contenido_index.pug
+
+  // footer
+  
+  include base/_footer.pug

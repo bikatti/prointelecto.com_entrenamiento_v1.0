@@ -1,0 +1,104 @@
+.o-boxesUniverse {
+    max-width: 60vw;
+    margin: 72px auto;
+    display: grid;
+    grid-template: 1fr / 1fr 1fr 1fr;
+    grid-template-areas: "col1 col2 col3";
+    justify-content: center;
+    box-sizing: border-box;
+    @include mediaQueriesLg {
+        max-width: 324px;
+        margin: 30px auto 60px;
+        grid-gap: 1px;
+        grid-template: auto auto auto / auto;
+        grid-template-areas: "col1" "col2" "col3";
+    }
+    .-boxPadding {
+        padding: 8px 4px;
+        @include mediaQueriesLg {
+            padding-bottom: 0;
+        }
+    }
+    .-col1 {
+        grid-area: col1;
+    }
+    .-col2 {
+        grid-area: col2;
+    }
+    .-col3 {
+        grid-area: col3;
+    }
+}
+
+.m-box {
+    width: 300px;
+    margin: 8px;
+    padding: 20px;
+    text-align: left;
+    opacity: 0;
+    display: inline-block;
+    border-radius: 4px;
+    cursor: pointer;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    top: 60px;
+    z-index: 99;
+    background-color: $color-lightengrey;
+    background-repeat: no-repeat;
+    animation-name: Upbox;
+    animation-duration: 0.6s;
+    animation-timing-function: cubic-bezier(0.15, 1, 0.33, 1);
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-fill-mode: forwards;
+    animation-play-state: running;
+    transition: all 0.3s cubic-bezier(0.15, 1, 0.33, 1) 0s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &:hover {
+        transform: translateY(-2px);
+        text-decoration: none;
+        color: $color-primary;
+        box-shadow: $shadow1;
+    }
+    &__title {
+        display: flex;
+        align-items: center;
+        font-weight: 500;
+    }
+    &__img {
+        height: 24px;
+        width: 24px;
+        margin-right: 8px;
+    }
+}
+.a-box__text {
+    margin-top: 10px;
+    line-height: 1.3;
+}
+
+@keyframes Upbox {
+    0% {
+        top: 60px;
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        top: 0;
+        opacity: 1;
+    }
+}
+
+.-box__anima {
+    &1 {
+        @include thumnailBox();
+    }
+    &2 {
+        @include thumnailBox(url("../img/concepto.jpg"));
+        padding-bottom: 320px;
+    }
+}

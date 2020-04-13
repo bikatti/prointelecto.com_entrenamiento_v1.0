@@ -1,0 +1,93 @@
+
+//- Contenido del index
+mixin boxWithText(a="#", img="assents/img/icons/arrow_head.svg", n="", title="Box con texto", texto="Texto de la card")
+ a(class="m-box m-box__anima", href=""+a)
+  .m-box__title
+   img(class="m-box__img", src=""+img, alt=""+n)
+   span=title
+  p.a-box__text=texto
+
+mixin boxWithoutAll(a="#", img="assents/img/icons/arrow_head.svg", n="", title="Box con texto")
+ a(class="m-box -box__anima1", href=""+a)
+  .m-box__title
+   img(class="m-box__img", src=""+img, alt=""+n)
+   span=title
+
+mixin boxWithImg(i="2", a="#", img="assents/img/icons/arrow_head.svg", n="", title="Box con texto")
+ a(class="m-box -box__anima"+i, href=""+a)
+  .m-box__title
+   img(class="m-box__img", src=""+img, alt=""+n)
+   span=title
+
+mixin boxWithAll(i="2", a="#", img="assents/img/icons/arrow_head.svg", n="", title="Box con texto", texto="Texto de la card para explicar este link, así que pon tu explícación")
+ a(class="m-box -box__anima"+i, href=""+a)
+  .m-box__title
+   img(class="m-box__img", src=""+img, alt=""+n)
+   span=title
+  p.a-box__text=texto
+
+
+//- Menu de Contenidos
+mixin menuSectionHeader(img, text="hello", title="Título")
+ span.m-containerHeading__itemHeader.-linkHover
+  .a-imgHeader
+   .a-imgHeader__icon
+    .a-imgHeader__container
+     img.a-imgHeader__img(src=""+img, alt=""+text)
+ .a-titleHeader
+  .a-titleHeader__container
+   span.a-titleHeader__title=title
+
+mixin titleGroupContent(c, n)
+ div(class="a-itemGroup__groupTitle "+c)
+  .a-itemGroup__groupTitleText
+   .a-itemGroup__navItem
+    .a-itemGroup__navItemText=n
+
+mixin itemContent(plus="", link="#", n="Nuevo")
+ a(class="a-itemContent -modifierLink"+plus, href=""+link)
+  span.a-titleHeader__title
+   span.a-titleHeader__title=n
+
+//- Menu Global desplegado
+mixin linkPageMenuGlobal(a="#",n="Link abordo!!")
+ a(class="a-itemContent -globalLink -colorWhite", href=""+a)
+  .a-itemPart
+   .a-itemPart__content=n
+
+//- Contenido de texto
+mixin titleContent(t="Pon aquí tu increíble título")
+ .a-gridElement
+  .a-gridElement__gridColumnLeft
+   div
+  .a-gridElement__gridColumnBox
+   div: h2=t
+
+mixin contenidoGrid(text)
+ .a-gridElement
+  .a-gridElement__gridColumnLeft
+   div
+  .a-gridElement__gridColumnBox
+   div
+    p=text
+
+//- Links a contenidos next up/related
+mixin relatedLink(a="#", n="Vamos al link anterior")
+ .m-relatedLink.-flex
+  h3.m-relatedLink__title Anterior
+  ul.m-relatedLink__link
+   li: a(class="m-nextUpLink__element", href=""+a)
+    .m-relatedLink__img
+    span=n
+
+mixin nextUpLink(a="#", n="Vamos al link seguiente ahora!!")
+ .m-nextUpLink.-flex
+  h3.m-nextUpLink__title Siguiente
+  ul.m-nextUpLink__link
+   li: a(class="m-nextUpLink__element", href=""+a)
+    .m-nextUpLink__img
+    span=n
+
+mixin navItemMobile(i="", l="", a="#", n="Link")
+ li(class="nav-item "+i)
+  a(class="nav-link -colorWhite"+l , href=""+a)=n

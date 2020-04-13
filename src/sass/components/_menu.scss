@@ -1,0 +1,364 @@
+// Menus, y navegación
+
+.o-nav {
+    position: relative;
+    z-index: 2;
+}
+
+.o-navFixedContainer {
+    width: inherit;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    left: 0;
+    z-index: 100;
+    transition: height 0.25s ease-in-out 0s;
+}
+
+// Menu global
+.o-navGlobal {
+    display: flex;
+    flex-shrink: 0;
+}
+
+.o-globalNavInner {
+    color: $color-lightin;
+    width: 64px;
+    padding: 16px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: $color-primary;
+}
+
+.m-globalNavPrimary {
+    flex: 1 1 0px;
+    &__action {
+        padding: 8px 0 16px;
+        box-sizing: border-box;
+    }
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.a-globalNavIcon {
+    height: 24px;
+    display: inline-block;
+    position: relative;
+    user-select: none;
+}
+
+
+// Menu content
+.o-navContainer {
+    min-width: 64px;
+    display: flex;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+.o-containerNavInner.o-containerNavWhite {
+    color: $color-alert;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 16px;
+    background-color: $color-lightgrey;
+}
+
+.m-revealInner {
+    flex-shrink: 0;
+    height: 0;
+    opacity: 0;
+    transition-property: height, opacity;
+    transition-duration: 200ms, 200ms;
+    transition-timing-function: ease, ease;
+    transition-delay: 0s, 0s;
+}
+
+.o-containerNavInner.o-containerNavBlue {
+    color: $color-lightin;
+    width: 100%;
+    padding-top: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: $color-primary;
+}
+
+// Header del Nav
+.m-containerHeading {
+    flex-basis: auto;
+    flex-shrink: 0;
+    min-height: 64px;
+    overflow: hidden;
+    padding: 0 18px;
+    transition: flex-basis 220ms ease 0s, padding 220ms ease 0s;
+    &__itemHeader {
+        padding: 8px 4px 7px;
+        color: $color-alert;
+        border-radius: 3px;
+        display: flex;
+        flex: 0 0 auto;
+        align-items: center;
+        background-color: transparent;
+        fill: transparent;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+}
+
+.a-imgHeader {
+    padding-bottom: 1px;
+    margin-right: 8px;
+    display: flex;
+    flex-shrink: 0;
+    align-items: center;
+    &__icon {
+        display: flex;
+        flex-shrink: 0;
+        align-items: center;
+        justify-content: center;
+        transition: padding 200ms ease 0s;
+    }
+    &__container {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__container > &__img {
+        border-radius: 4px;
+    }
+    &__img {
+        width: 40px;
+        height: 40px;
+        min-width: 40px;
+        font-size: 0;
+        background-color: $color-primary;
+    }
+}
+
+.a-titleHeader {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    &__container {
+        padding-bottom: 1px;
+        text-overflow: ellipsis;
+        white-space: wrap;
+        line-height: 1.2;
+        display: block;
+        flex: 1 1 auto;
+    }
+}
+
+// Links Content de Nav
+.m-scroll__containerNavChildren.-globalMenu {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 100%;
+    overflow: hidden;
+    position: relative;
+    &::before {
+        top: 0;
+        content: "";
+    }
+    &::before, &::after {
+        height: 2px;
+        display: block;
+        flex: 0 1 0%;
+        position: absolute;
+        left: 16px;
+        right: 32px;
+        z-index: 1;
+        background: $color-lightgrey none repeat scroll 0% 0%;
+    }
+}
+
+.m-scroll__containerNavChildren.-contentMenu {
+    @extend .m-scroll__containerNavChildren.-globalMenu;
+    &::before, &::after {
+        background: $color-grey none repeat scroll 0% 0%;
+    }
+}
+
+.m-scroll__scrollContainer.-globalMenu {
+    width: 100%;
+    height: 100%;
+    padding: 0 16px 8px;
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    justify-content: flex-start;
+    overflow-y: auto;
+    box-sizing: border-box;
+    transition: padding 220ms ease 0s;
+    &::before, &::after {
+        min-height: 2px;
+        content: "";
+        display: block;
+        flex: 0 1 0%;
+        position: relative;
+        z-index: 5;
+        background: $color-lightgrey none repeat scroll 0% 0%;
+    }
+    &::before {
+        top: 8px;
+    }
+}
+
+.m-scroll__scrollContainer.-contentMenu {
+    @extend .m-scroll__scrollContainer.-globalMenu;
+    &::before, &::after {
+        background: $color-primary none repeat scroll 0% 0%;
+    }
+}
+
+.a-itemContent {
+    height: 36px;
+    padding: 8px 8px 7px;
+    display: flex;
+    flex: 0 0 auto;
+    align-items: center;
+    border-radius: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+    text-decoration: none;
+    // con js se puede hacer transparent
+    background-color: rgba($color-darkgrey, $alpha: .1);
+    fill: rgba($color-darkgrey, $alpha: .1);
+    &.-transparentLink {
+        background-color: transparent;
+        fill: transparent;
+    }
+    &.-globalLink {
+        background-color: $color-primary;
+        fill: $color-primary;
+    }
+}
+.-colorWhite {
+    color: $color-lightin;
+    text-transform: none;
+}
+
+.a-itemGroup__groupTitle {
+    padding: 8px 12px;
+    flex: 1 1 auto;
+    align-items: center;
+    color: $color-darkgrey;
+    &Text {
+        font-size: $fontS1;
+        line-height: 1;
+        text-transform: uppercase;
+        min-width: 0;
+        flex: 1 1 auto;
+    }
+    &.-globalMenu {
+        color: rgba($color-lightgrey, $alpha: .6);
+    }
+}
+
+.a-itemGroup__navItem {
+    display: flex;
+    margin-left: -8px;
+    margin-top: 12px;
+    &Text {
+        font-size: $fontS1;
+        line-height: 1.2;
+        font-weight: 600;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+}
+
+
+.o-globalNavSec_container {
+    width: 32;
+    align-self: center;
+    flex-grow: 0;
+}
+
+// Cortinilla de opacidad
+.a-curtain {
+    pointer-events: none;
+    position: fixed;
+    z-index: 101;
+    opacity: 0;
+    inset: 0px;
+    background: rgba($color-alert, $alpha: .3) none repeat scroll 0% 0%;
+    transition: opacity 220ms ease 0s;
+}
+
+// Menu global
+.m-containerHeading__brand {
+    & > :first-child {
+        margin-bottom: 8px;
+    }
+}
+.m-containerHeading__img {
+    margin-top: 11px;
+    margin-bottom: 3px;
+    font-size: 0;
+    background-color: $color-lightgrey;
+}
+
+.a-itemPart {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    overflow: hidden;
+    &__content {
+        padding-bottom: 1px;
+        text-overflow: ellipsis;
+        line-height: 1.15;
+        display: flex;
+        flex: 1 1 auto;
+        overflow: hidden;
+    }
+}
+
+// Menú Medium-mobile
+.bg-menu {
+    background-color: $color-primary;
+    padding: 4px 16px;
+    display: grid;
+    grid-template-columns: 40px 1fr 40px;
+    grid-gap: 0 10px;
+    grid-template-areas: "Toggler Logo buscador" "itemLink itemLink itemLink";
+    button:focus {
+        outline: 5px auto $color-secondary;
+    }
+    @include mediaQueriesSm {
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+}
+.a-navItemLink {
+    grid-area: itemLink;
+}
+.a-navLogo {
+    grid-area: Logo;
+    text-align: center;
+    margin-right: 0;
+}
+.a-navToggler {
+    grid-area: Toggler;
+}
+.m-buscador {
+    grid-area: buscador;
+}
+.navbar-nav .nav-link {
+    font-size: $fontS3 - 1;
+    padding-left: 12px;
+}

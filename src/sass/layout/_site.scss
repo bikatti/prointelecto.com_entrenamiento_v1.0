@@ -1,0 +1,24 @@
+html, body, p, div, h1, h2, h3, ul, ol, img, form {
+    margin: 0;
+    padding: 0;
+}
+
+article, aside, figure, footer, header,
+main, menu, nav, section {
+    display: block;
+}
+
+article {
+    font-size: $fontS2;
+    line-height: 28px;
+    font-weight: 400;
+    color: $color-primary;
+    font-family: $font2;
+    padding-bottom: 48px;
+    @include mediaQueriesLg {
+        padding-top: 30px;
+    }
+    @include mediaQueriesMd {
+        padding-top: 60px;
+    }
+}

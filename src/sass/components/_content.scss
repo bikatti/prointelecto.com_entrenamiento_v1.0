@@ -1,0 +1,195 @@
+// Page Content
+.o-colorIndex {
+    background-color: $color-primary;
+}
+
+.o-pageContent {
+    min-width: 0px;
+    flex: 1 1 auto;
+    position: relative;
+    z-index: 1;
+}
+
+.o-mrContent {
+    margin-top: 32px;
+    margin-left: 0;
+    transition: margin-left 0.25s ease 0s;
+    &.-index {
+        margin-left: -64px;
+    }
+    @include mediaQueriesLg {
+        &.-index {
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.a-pageTitle {
+    text-align: center;
+    margin: 40px auto 0;
+    &__text {
+        color: $color-lightin;
+    }
+    &__pg {
+        color: $color-lightin;
+        max-width: 23em;
+        line-height: 1.25;
+        font-weight: 500;
+        display: inline-block;
+        margin-top: 5px;
+        letter-spacing: 0;
+    }
+    @include mediaQueriesSm {
+        margin-top: 60px;
+        max-width: 90%;
+    }
+    @include mediaQueriesXs {
+        margin-top: 80px;
+    }
+}
+
+.a-gridElement {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-bottom: 8px;
+    padding-right: 8px;
+    padding-left: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    position: relative;
+    @include mediaQueriesLg {
+        max-width: 100%;
+        padding-bottom: 12px;
+    }
+    @include mediaQueriesMd {
+        padding-bottom: 14px;
+    }
+    @include mediaQueriesSm {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &__gridColumnLeft {
+        max-width: #{calc(16.6667% - 16px)};
+        min-width: #{calc(8.33333% - 16px)};
+        margin-right: 8px;
+        margin-left: 8px;
+        flex: 1 0 #{calc(16.6667% - 16px)};
+        overflow-wrap: break-word;
+        @include mediaQueriesLg {
+            max-width: #{calc(10.6667% - 16px)};
+        }
+        @include mediaQueriesSm {
+            margin-left: 0;
+            margin-right: 0;
+            max-width: 0;
+            min-width: 40px;
+        }
+        @include mediaQueriesSm {
+            min-width: 20px;
+        }
+    }
+    &__gridColumnBox {
+        max-width: #{calc(66.6666% - 16px)};
+        min-width: #{calc(8.33333% - 16px)};
+        margin-right: 8px;
+        margin-left: 8px;
+        flex: 1 0 #{calc(66.6666% - 16px)};
+        overflow-wrap: break-word;
+        @include mediaQueriesLg {
+            max-width: #{calc(80.6667% - 16px)};
+        }
+        @include mediaQueriesSm {
+            max-width: 100%;
+            margin-left: 0;
+            margin-right: 40px;
+        }
+        @include mediaQueriesSm {
+            margin-right: 20px;
+        }
+    }
+}
+
+
+.o-nextLink {
+    max-width: 680px;
+    margin: 30px auto 60px;
+    padding: 24px 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 4px;
+    background-color: $color-lightgrey;
+    @include mediaQueriesMd {
+        flex-direction: column;
+        padding-bottom: #{calc( 40px - 16px)};
+        margin: 0 auto 60px;
+        max-width: 90%;
+    }
+    @include mediaQueriesXs {
+        padding-left: 18px;
+        padding-right: 18px;
+    }
+}
+
+.m-relatedLink,.m-nextUpLink {
+    &.-flex {
+        flex: 0 0 260px;
+    }
+    &__title {
+        margin: 0 0 16px;
+        padding: 0;
+    }
+    &__link {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    &__element {
+        padding-top: 8px;
+        padding-bottom: 8px;
+        text-decoration: none;
+        display: flex;
+        &:hover {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+        &:active {
+            text-decoration: underline;
+            color: $color-primary;
+        }
+    }
+    &__img {
+        width: 24px;
+        height: 24px;
+        margin-left: 8px;
+        margin-right: 8px;
+        margin-top: 2px;
+        border-radius: 2px;
+        display: inline-block;
+        background-color: $color-primary;
+    }
+    &__img + span {
+        flex: 0 0 auto;
+        &:hover {
+            color: $color-primary;
+        }
+        &:active {
+            color: $color-primary;
+        }
+        &:focus {
+            color: $color-primary;
+        }
+    }
+    @include mediaQueriesMd {
+        padding-bottom: 12px;
+        &.-flex {
+            flex: 0 0 0;
+        }
+        &__title {
+            margin-bottom: 6px;
+        }
+    }
+}
