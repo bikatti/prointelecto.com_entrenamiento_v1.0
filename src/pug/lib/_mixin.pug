@@ -34,9 +34,9 @@ mixin menuSectionHeader(img, text="hello", title="Título")
    .a-imgHeader__icon
     .a-imgHeader__container
      img.a-imgHeader__img(src=""+img, alt=""+text)
- .a-titleHeader
-  .a-titleHeader__container
-   span.a-titleHeader__title=title
+  .a-titleHeader
+   .a-titleHeader__container
+    span.a-titleHeader__title=title
 
 mixin titleGroupContent(c, n)
  div(class="a-itemGroup__groupTitle "+c)
@@ -44,8 +44,8 @@ mixin titleGroupContent(c, n)
    .a-itemGroup__navItem
     .a-itemGroup__navItemText=n
 
-mixin itemContent(plus="", link="#", n="Nuevo")
- a(class="a-itemContent -modifierLink"+plus, href=""+link)
+mixin itemContent(i, plus="", link="#", n="Nuevo")
+ a(id=""+i, class="a-itemContent"+plus, href=""+link)
   span.a-titleHeader__title
    span.a-titleHeader__title=n
 

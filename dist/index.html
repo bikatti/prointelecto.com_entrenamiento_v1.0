@@ -7,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/dist/assets/css/style.css"/>
+    <link rel="stylesheet" href="/conex/assets/css/style.css"/>
     <!-- Iconos-->
     <title>Conex</title>
   </head>
@@ -19,15 +19,72 @@
           <!--menu desktop-->
           <div class="o-nav d-none d-lg-flex">
             <div>
-              <div style="width: 64px;">
+              <div class="index-menu" style="width: 64px;">
                 <div class="o-navFixedContainer">
                   <div class="o-navGlobal">
                     <div class="o-globalNavInner">
                       <div class="m-globalNavPrimary">
                         <div class="m-globalNavPrimary__action">
-                          <div class="m-globalNavPrimary__item"><a href="/dist/">
-                              <div class="a-globalNavIcon"><img src="/dist/assets/img/icons/menu_white.svg" alt="logo brand"/></div></a></div>
+                          <div class="m-globalNavPrimary__item">
+                            <div class="a-globalNavIcon"><img id="a-burguerMenu" src="/conex/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
+                          </div>
                         </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="o-navContainer" id="menuContent">
+                    <div class="o-containerNavInner o-containerNavWhite">
+                      <div class="m-revealInner"></div>
+                      <div class="m-containerHeading"><span class="m-containerHeading__itemHeader -linkHover">
+                          <div class="a-imgHeader">
+                            <div class="a-imgHeader__icon">
+                              <div class="a-imgHeader__container"><img class="a-imgHeader__img" src="undefined" alt="hello"/></div>
+                            </div>
+                          </div>
+                          <div class="a-titleHeader">
+                            <div class="a-titleHeader__container"><span class="a-titleHeader__title">Título</span></div>
+                          </div></span><a class="m-containerHeading__brand d-none" href="/conex/">
+                          <div class="m-containerHeading__img"></div></a>
+                      </div>
+                      <div class="m-scroll__containerNavChildren -contentMenu">
+                        <div class="m-scroll__scrollContainer -contentMenu">
+                          <div class="m-scroll__content">
+                            <div aria-label="otro" role="group"><a class="a-itemContent" id="" href="#"><span class="a-titleHeader__title"><span class="a-titleHeader__title">Como estas</span></span></a>
+                            </div>
+                            <div aria-label="Cosas Nuevas" role="group">
+                              <div class="a-itemGroup__groupTitle ">
+                                <div class="a-itemGroup__groupTitleText">
+                                  <div class="a-itemGroup__navItem">
+                                    <div class="a-itemGroup__navItemText">cosas nuevas</div>
+                                  </div>
+                                </div>
+                              </div><a class="a-itemContent -modifierLink" id="itemContentLink-1" href="/conex/odoo/page-prueba.html"><span class="a-titleHeader__title"><span class="a-titleHeader__title">primer links</span></span></a>
+                            </div>
+                          </div>
+                          <div class="m-scrollGlobal__content d-none"><a class="a-itemContent -globalLink -colorWhite" href="/dist/">
+                              <div class="a-itemPart">
+                                <div class="a-itemPart__content">Hello</div>
+                              </div></a>
+                            <div aria-label="Cosas Nuevas" role="group">
+                              <div class="a-itemGroup__groupTitle -globalMenu">
+                                <div class="a-itemGroup__groupTitleText">
+                                  <div class="a-itemGroup__navItem">
+                                    <div class="a-itemGroup__navItemText">cosas nuevas</div>
+                                  </div>
+                                </div>
+                              </div><a class="a-itemContent -globalLink -colorWhite" href="#">
+                                <div class="a-itemPart">
+                                  <div class="a-itemPart__content">Link abordo!!</div>
+                                </div></a><a class="a-itemContent -globalLink -colorWhite" href="/conex/odoo/page-prueba.html">
+                                <div class="a-itemPart">
+                                  <div class="a-itemPart__content">Odoo page</div>
+                                </div></a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="o-globalNavSec_container">
+                        <div class="m-revealInner"></div>
                       </div>
                     </div>
                   </div>
@@ -41,14 +98,14 @@
           <!-- menu md-sm-->
           <div class="o-nav d-flex d-lg-none">
             <div class="o-navMobile">
-              <nav class="navbar navbar-expand-lg bg-menu fixed-top"><a class="navbar-brand a-navLogo -colorWhite" href="/dist/">Navbar</a>
+              <nav class="navbar navbar-expand-lg bg-menu fixed-top"><a class="navbar-brand a-navLogo -colorWhite" href="/conex/">Navbar</a>
                 <button class="navbar-toggler a-navToggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <div class="a-globalNavIcon"><img src="/dist/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
+                  <div class="a-globalNavIcon"><img src="/conex/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
                 </button>
                 <div class="collapse navbar-collapse a-navItemLink" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link -colorWhite" href="#">Nuevo Link</a></li>
-                    <li class="nav-item "><a class="nav-link -colorWhite" href="/dist/odoo/page-prueba.html">Odoo</a></li>
+                    <li class="nav-item "><a class="nav-link -colorWhite" href="/conex/odoo/page-prueba.html">Odoo</a></li>
                     <li class="nav-item "><a class="nav-link -colorWhite" href="#">Título Principal</a></li>
                   </ul>
                 </div>
@@ -64,19 +121,19 @@
                 <h2 class="a-pageTitle__pg">Use Atlassian’s end-to-end design language to create straightforward and beautiful experiences.</h2>
               </div>
               <div class="o-boxesUniverse">
-                <div class="-boxPadding -col1"><a class="m-box m-box__anima" href="/dist/odoo/page-prueba.html">
+                <div class="-boxPadding -col1"><a class="m-box m-box__anima" href="/conex/odoo/page-prueba.html">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Odoo</span></div>
                     <p class="a-box__text">The grid items starts before the first column and spans, creating a new one in the process.</p></a><a class="m-box -box__anima1" href="#">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Caja 1</span></div></a><a class="m-box -box__anima2" href="#">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Caja 2</span></div></a>
                 </div>
-                <div class="-boxPadding -col2"><a class="m-box m-box__anima" href="/dist/odoo/page-prueba.html">
+                <div class="-boxPadding -col2"><a class="m-box m-box__anima" href="/conex/odoo/page-prueba.html">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Caja 3</span></div>
                     <p class="a-box__text">The grid items starts before the first column and spans, creating a new one in the process.</p></a><a class="m-box -box__anima2" href="#">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Administración</span></div>
                     <p class="a-box__text">The grid items starts before the first column and spans, creating a new one in the process.</p></a>
                 </div>
-                <div class="-boxPadding -col3"><a class="m-box m-box__anima" href="/dist/odoo/page-prueba.html">
+                <div class="-boxPadding -col3"><a class="m-box m-box__anima" href="/conex/odoo/page-prueba.html">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Caja chica</span></div>
                     <p class="a-box__text">The grid items starts before the first column and spans, creating a new one in the process.</p></a><a class="m-box -box__anima1" href="#">
                     <div class="m-box__title"><img class="m-box__img" src="assents/img/icons/arrow_head.svg" alt=""/><span>Odoo 2</span></div></a><a class="m-box -box__anima2" href="#">
@@ -101,5 +158,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/conex/assets/js/index.js"></script>
   </body>
 </html>

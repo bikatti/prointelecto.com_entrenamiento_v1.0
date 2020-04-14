@@ -1,15 +1,15 @@
 .o-navMobile
  nav(class="navbar navbar-expand-lg bg-menu fixed-top")
-  a(class="navbar-brand a-navLogo -colorWhite", href="/dist/") Navbar
+  a(class="navbar-brand a-navLogo -colorWhite", href=linksUrl[1]) Navbar
   button(class="navbar-toggler a-navToggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
    //- span(class="navbar-toggler-icon")
    .a-globalNavIcon
-    img(src="/dist/assets/img/icons/menu_white.svg", alt="logo brand")
+    img(src=linksUrl[1]+"assets/img/icons/menu_white.svg", alt="logo brand")
   
   .collapse.navbar-collapse.a-navItemLink#navbarSupportedContent
    ul.navbar-nav
     +navItemMobile("active", "", "#", "Nuevo Link")
-    +navItemMobile("", "", "/dist/odoo/page-prueba.html", "Odoo")
+    +navItemMobile("", "", linksUrl[1]+"odoo/page-prueba.html", "Odoo")
     +navItemMobile("", "", "#", title)
 
   .m-buscador

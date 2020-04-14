@@ -179,14 +179,14 @@
         left: 16px;
         right: 32px;
         z-index: 1;
-        background: $color-lightgrey none repeat scroll 0% 0%;
+        background: transparent none repeat scroll 0% 0%;
     }
 }
 
 .m-scroll__containerNavChildren.-contentMenu {
     @extend .m-scroll__containerNavChildren.-globalMenu;
     &::before, &::after {
-        background: $color-grey none repeat scroll 0% 0%;
+        background: transparent none repeat scroll 0% 0%;
     }
 }
 
@@ -208,7 +208,7 @@
         flex: 0 1 0%;
         position: relative;
         z-index: 5;
-        background: $color-lightgrey none repeat scroll 0% 0%;
+        background: transparent none repeat scroll 0% 0%;
     }
     &::before {
         top: 8px;
@@ -218,7 +218,7 @@
 .m-scroll__scrollContainer.-contentMenu {
     @extend .m-scroll__scrollContainer.-globalMenu;
     &::before, &::after {
-        background: $color-primary none repeat scroll 0% 0%;
+        background: transparent none repeat scroll 0% 0%;
     }
 }
 
@@ -233,8 +233,8 @@
     box-sizing: border-box;
     text-decoration: none;
     // con js se puede hacer transparent
-    background-color: rgba($color-darkgrey, $alpha: .1);
-    fill: rgba($color-darkgrey, $alpha: .1);
+    background-color: transparent;
+    fill: transparent;
     &.-transparentLink {
         background-color: transparent;
         fill: transparent;
@@ -291,9 +291,11 @@
 
 // Cortinilla de opacidad
 .a-curtain {
+    width: 100vw;
+    height: 100vh;
     pointer-events: none;
     position: fixed;
-    z-index: 101;
+    z-index: 50;
     opacity: 0;
     inset: 0px;
     background: rgba($color-alert, $alpha: .3) none repeat scroll 0% 0%;

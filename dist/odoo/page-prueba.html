@@ -7,14 +7,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
     <!-- Bootstrap CSS-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"/>
-    <link rel="stylesheet" href="/dist/assets/css/style.css"/>
+    <link rel="stylesheet" href="/conex/assets/css/style.css"/>
     <!-- Iconos-->
     <link rel="stylesheet" href="../assets/css/style.css"/>
     <title>Conex</title>
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#menuContent" data-offset="0">
     <!-- page-->
-    <div class="o">
+    <div class="o" id="itemContentLink-1">
       <div class="o-container">
         <div class="o-navAndContent">
           <!--menu-->
@@ -26,29 +26,31 @@
                     <div class="o-globalNavInner">
                       <div class="m-globalNavPrimary">
                         <div class="m-globalNavPrimary__action">
-                          <div class="m-globalNavPrimary__item"><a href="/dist/">
-                              <div class="a-globalNavIcon"><img src="/dist/assets/img/icons/menu_white.svg" alt="logo brand"/></div></a></div>
+                          <div class="m-globalNavPrimary__item">
+                            <div class="a-globalNavIcon"><img id="a-burguerMenu" src="/conex/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
+                          </div>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <div class="o-navContainer">
-                    <div class="o-containerNavInner o-containerNavWhite o-containerNavBlue">
+                  <div class="o-navContainer" id="menuContent">
+                    <div class="o-containerNavInner o-containerNavWhite">
                       <div class="m-revealInner"></div>
-                      <div class="m-containerHeading"><span class="m-containerHeading__itemHeader -linkHover"><span class="m-containerHeading__itemHeader -linkHover">
-                            <div class="a-imgHeader">
-                              <div class="a-imgHeader__icon">
-                                <div class="a-imgHeader__container"><img class="a-imgHeader__img" src="undefined" alt="hello"/></div>
-                              </div>
-                            </div></span>
+                      <div class="m-containerHeading"><span class="m-containerHeading__itemHeader -linkHover">
+                          <div class="a-imgHeader">
+                            <div class="a-imgHeader__icon">
+                              <div class="a-imgHeader__container"><img class="a-imgHeader__img" src="undefined" alt="hello"/></div>
+                            </div>
+                          </div>
                           <div class="a-titleHeader">
                             <div class="a-titleHeader__container"><span class="a-titleHeader__title">Título</span></div>
-                          </div></span><a class="m-containerHeading__brand d-none" href="/dist/">
-                          <div class="m-containerHeading__img"></div></a></div>
-                      <div class="m-scroll__containerNavChildren -globalMenu -contentMenu">
-                        <div class="m-scroll__scrollContainer -globalMenu -contentMenu">
-                          <div class="m-scroll__content d-none">
-                            <div aria-label="otro" role="group"><a class="a-itemContent -modifierLink" href="#"><span class="a-titleHeader__title"><span class="a-titleHeader__title">Como estas</span></span></a>
+                          </div></span><a class="m-containerHeading__brand d-none" href="/conex/">
+                          <div class="m-containerHeading__img"></div></a>
+                      </div>
+                      <div class="m-scroll__containerNavChildren -contentMenu">
+                        <div class="m-scroll__scrollContainer -contentMenu">
+                          <div class="m-scroll__content">
+                            <div aria-label="otro" role="group"><a class="a-itemContent" id="" href="#"><span class="a-titleHeader__title"><span class="a-titleHeader__title">Como estas</span></span></a>
                             </div>
                             <div aria-label="Cosas Nuevas" role="group">
                               <div class="a-itemGroup__groupTitle ">
@@ -57,10 +59,10 @@
                                     <div class="a-itemGroup__navItemText">cosas nuevas</div>
                                   </div>
                                 </div>
-                              </div><a class="a-itemContent -modifierLink -modifierLink" href="/odoo/page-prueba.html"><span class="a-titleHeader__title"><span class="a-titleHeader__title">primer links</span></span></a>
+                              </div><a class="a-itemContent -modifierLink" id="itemContentLink-1" href="/conex/odoo/page-prueba.html"><span class="a-titleHeader__title"><span class="a-titleHeader__title">primer links</span></span></a>
                             </div>
                           </div>
-                          <div class="m-scrollGlobal__content"><a class="a-itemContent -globalLink -colorWhite" href="/dist/">
+                          <div class="m-scrollGlobal__content d-none"><a class="a-itemContent -globalLink -colorWhite" href="/dist/">
                               <div class="a-itemPart">
                                 <div class="a-itemPart__content">Hello</div>
                               </div></a>
@@ -74,7 +76,7 @@
                               </div><a class="a-itemContent -globalLink -colorWhite" href="#">
                                 <div class="a-itemPart">
                                   <div class="a-itemPart__content">Link abordo!!</div>
-                                </div></a><a class="a-itemContent -globalLink -colorWhite" href="/dist/odoo/page-prueba.html">
+                                </div></a><a class="a-itemContent -globalLink -colorWhite" href="/conex/odoo/page-prueba.html">
                                 <div class="a-itemPart">
                                   <div class="a-itemPart__content">Odoo page</div>
                                 </div></a>
@@ -97,14 +99,14 @@
           <!-- menu md-sm-->
           <div class="o-nav d-flex d-lg-none">
             <div class="o-navMobile">
-              <nav class="navbar navbar-expand-lg bg-menu fixed-top"><a class="navbar-brand a-navLogo -colorWhite" href="/dist/">Navbar</a>
+              <nav class="navbar navbar-expand-lg bg-menu fixed-top"><a class="navbar-brand a-navLogo -colorWhite" href="/conex/">Navbar</a>
                 <button class="navbar-toggler a-navToggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                  <div class="a-globalNavIcon"><img src="/dist/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
+                  <div class="a-globalNavIcon"><img src="/conex/assets/img/icons/menu_white.svg" alt="logo brand"/></div>
                 </button>
                 <div class="collapse navbar-collapse a-navItemLink" id="navbarSupportedContent">
                   <ul class="navbar-nav">
                     <li class="nav-item active"><a class="nav-link -colorWhite" href="#">Nuevo Link</a></li>
-                    <li class="nav-item "><a class="nav-link -colorWhite" href="/dist/odoo/page-prueba.html">Odoo</a></li>
+                    <li class="nav-item "><a class="nav-link -colorWhite" href="/conex/odoo/page-prueba.html">Odoo</a></li>
                     <li class="nav-item "><a class="nav-link -colorWhite" href="#">Título Principal</a></li>
                   </ul>
                 </div>
@@ -186,5 +188,6 @@
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="/conex/assets/js/index.js"></script>
   </body>
 </html>
