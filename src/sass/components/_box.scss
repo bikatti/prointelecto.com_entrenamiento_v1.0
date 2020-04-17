@@ -2,7 +2,7 @@
     max-width: 60vw;
     margin: 72px auto;
     display: grid;
-    grid-template: 1fr / 1fr 1fr 1fr;
+    // grid-template: 1fr / 1fr 1fr 1fr;
     grid-template-areas: "col1 col2 col3";
     justify-content: center;
     box-sizing: border-box;

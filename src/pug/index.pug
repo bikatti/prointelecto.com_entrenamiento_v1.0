@@ -1,4 +1,3 @@
-
 include lib/_var.pug
 include lib/_mixin.pug
 <!DOCTYPE html>
@@ -14,10 +13,9 @@ html(lang="es")
      //menu desktop
      .o-nav.d-none.d-lg-flex
       div
-       div.index-menu(style="width: 64px;")
+       div.o-nav__container.o-index-menu(style="width: 64px;")
          .o-navFixedContainer
            include base/_header.pug
-           include components/_menu.pug
        div
         .a-curtain
      // menu md-sm
@@ -28,5 +26,4 @@ html(lang="es")
      include components/_contenido_index.pug
 
   // footer
-  
   include base/_footer.pug

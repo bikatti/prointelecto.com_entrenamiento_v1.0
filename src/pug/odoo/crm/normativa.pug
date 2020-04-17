@@ -1,0 +1,20 @@
+include ../../lib/_var.pug
+include ../../lib/_mixin.pug
+<!DOCTYPE html>
+html(lang="es")
+ include ../../base/_head.pug
+  link(rel="stylesheet", href="/dist/assets/css/style.css")
+  title #{titleOdoo[1]} - #{titles[0]}
+ body(data-spy="scroll", data-target="#menuContent", data-offset="0")
+  // page
+  .o#itemContentLink-1
+   .o-container
+    .o-navAndContent
+     //menu
+     .o-nav.d-none.d-lg-flex
+      div
+       div(style="width: 304px;")
+         .o-navFixedContainer
+           include ../../components/_odoo_menu.pug
+       div
+        .a-curtain

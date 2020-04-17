@@ -36,8 +36,9 @@ function hideShow() {
     scrollGlobalContainer.classList.remove('-globalMenu');
     scrollGlobalContent.classList.add('d-none');
     headBrand.classList.add('d-none');
+    scrollContentLink.classList.remove('d-none');
+    headItemHeader.classList.remove('d-none');
     curtainMenu.style.opacity = 0;
-    indexContainer.style.width = (`64px`);
   }
   else {
     menuGlobalLg.classList.add('o-containerNavBlue');
@@ -45,7 +46,8 @@ function hideShow() {
     scrollGlobalContainer.classList.add('-globalMenu')
     scrollGlobalContent.classList.remove('d-none');
     headBrand.classList.remove('d-none');
+    scrollContentLink.classList.add('d-none');
+    headItemHeader.classList.add('d-none');
     curtainMenu.style.opacity = 1;
-    indexContainer.style.width = (`304px`);
   }
 }
