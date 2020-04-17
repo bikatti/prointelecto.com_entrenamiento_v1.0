@@ -3,16 +3,67 @@
   div(class="o-article__wrapper", data-artucle-title="overview")
    article
     div
-     +titleContent(titleOdoo[0])
-    div
-      +contenidoGrid(`ODOO: Es es una Suite de aplicaciones en la web relacionadas con funciones y gestiones empresariales, tales como CRM (Customer Relation Mangment), gestión de proyectos, mesa de ayuda (HelpbDesk), comercio electrónico, contabilidad, inventario,  etc.  Esta plataforma puede adaptarse y personalizarse para los requerimientos de una empresa o grupo empresarial particular.`)
-      +contenidoGrid(`Conex Telecom hace uso de esta plataforma para gestionar y hacer seguimiento de varios de sus procesos, como los relacionados con ventas y mercadeo, para los cual utilizan el modulo de CRM, también gestionan Proyectos y próximamente se estará implementando un módulo de Help Desk con que cuenta también la plataforma.  La dirección de Internet a través de la cual se puede acceder a esta plataforma es Conex.Online, se debe contar con un usuario y clave, creados por el Departamento de Sistemas de Conex Telecom.`)
-    div
-      +contenidoGrid(`CRM: Por sus siglas en inglés Customer Relationship Management, es una aplicación o programa que permite la gestión de relaciones con clientes y de actividades de venta y mercadeo.  CRM en Oddo es el módulo a través del cual el personal de ventas de las diferentes sedes de Conex Telecom gestionan de forma centralizada y bajo unos mismos criterios la gran parte de la actividades relacionadas con este particular.  Esta aplicación permite de forma fácil llevar a cabo el seguimiento de clientes potenciales, la distribución y asignación de tareas, el almacenamiento de los datos de los clientes de forma organizada y centralizada, así como la evaluación del desempeño de los equipos de ventas y de sus integrantes. `)
-    div
-      +contenidoGrid(`Usuarios del CRM: Son las personas que hacen uso de la aplicación.  En Conex Telecom son los directivos, personal del departamento de sistemas, los gerentes comerciales, gerentes de ventas, coordinadores de ventas, vendedores que son personal de la empresa, vendedores externos independientes, manejadores de cuentas de redes sociales y operadores del Call Center.`)
-   
+     +titleContent('CRM - '+titleOdoo[0])
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b ODOO:] Es es una Suite de aplicaciones en la web relacionadas con funciones y gestiones empresariales, tales como CRM (Customer Relation Mangment), gestión de proyectos, mesa de ayuda (HelpbDesk), comercio electrónico, contabilidad, inventario,  etc.  Esta plataforma puede adaptarse y personalizarse para los requerimientos de una empresa o grupo empresarial particular.
+        p Conex Telecom hace uso de esta plataforma para gestionar y hacer seguimiento de varios de sus procesos, como los relacionados con ventas y mercadeo, para los cual utilizan el modulo de CRM, también gestionan Proyectos y próximamente se estará implementando un módulo de Help Desk con que cuenta también la plataforma.  La dirección de Internet a través de la cual se puede acceder a esta plataforma es Conex.Online, se debe contar con un usuario y clave, creados por el Departamento de Sistemas de Conex Telecom.
+
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b CRM:] Por sus siglas en inglés Customer Relationship Management, es una aplicación o programa que permite la gestión de relaciones con clientes y de actividades de venta y mercadeo.  CRM en Oddo es el módulo a través del cual el personal de ventas de las diferentes sedes de Conex Telecom gestionan de forma centralizada y bajo unos mismos criterios la gran parte de la actividades relacionadas con este particular.  Esta aplicación permite de forma fácil llevar a cabo el seguimiento de clientes potenciales, la distribución y asignación de tareas, el almacenamiento de los datos de los clientes de forma organizada y centralizada, así como la evaluación del desempeño de los equipos de ventas y de sus integrantes.
+        
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b Usuarios del CRM:] Son las personas que hacen uso de la aplicación.  En Conex Telecom son los directivos, personal del departamento de sistemas, los gerentes comerciales, gerentes de ventas, coordinadores de ventas, vendedores que son personal de la empresa, vendedores externos independientes, manejadores de cuentas de redes sociales y operadores del Call Center.
+        
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b Equipo de Ventas:]  La aplicación de CRM de Odoo opera con Equipos de Ventas, estos son grupos de usuarios que se han creado de acuerdo a unos criterios específicos, ya sea porque sus miembros se dedican a atender una zona de venta determinada, porque sólo venden uno o varios servicios específicos o porque tienen una condición que a la directiva de la empresa le ha interesado distinguir.  Para la fecha, en el CRM de Conex Telecom existen Equipos de Ventas por Zona, por tipos de servicios y por actividades de mercadeo que realizan. 
+
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b Iniciativa:] Es el registro de la información proveniente del primer contacto con el cliente, quien para este momento se considera un Prospecto, aquí se recogen datos relevantes sobre el mismo para comenzar a gestionar una relación que permita convertirlo, a corto o mediano plazo, en un cliente potencial o lo que en Odoo se denomina una "Oportunidad".
+        p En el CRM de Conex Telecom la información que se registra como Iniciativa en el CRM puede provenir de datos que se reciben: A través de un formulario que se encuentra en el sitio web de la empresa, de personal que gestiona el Whatsapp corporativo de Conex Telecom, de personal que gestiona las redes sociales de la empresa, del personal del Call Center por llamadas recibidas de personas interesadas; o de los vendedores cuando han captado  información de personas interesadas durante su labor de mercadeo de calle o de alguna campaña en particular.
+        
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b Oportunidad:] Es una Iniciativa en la que el prospecto ha mostrado interés en conocer más acerca de los servicios de la empresa, se cuenta con todos los datos necesarios para seguir gestionando la relación y hay probabilidades ciertas de que se pueda concretar una venta con él.
+        p Las Oportunidades se pueden generar de dos formas convirtiendo una Iniciativa en Oportunidad o creándola sin que la preceda una Iniciativa.
+
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        p #[b Flujo de Ventas:] Es la representación visual del proceso de ventas con su etapas, desde el primer contacto hasta la concreción de la venta.  Es una vista dentro de la aplicación del CRM en la que se puede visualizar una especie de tabla, en donde las columnas representan cada etapa del proceso de venta de acuerdo a cómo ha sido definido por la empresa, y en las filas se observan las Oportunidades que lucen como tarjetas, las cuales pueden ser desplazadas por los usuarios por las diferente etapas del Flujo de Ventas, en la medida que la gestión se vaya realizando.
+
    .o-nextLink
-    +relatedLink()
-    +nextUpLink()
+    +relatedLink("d-none", "#")
+    +nextUpLink("", linksUrl[1]+linkOdoo[1], titleOdoo[1])
   include ../_footer_firm.pug

@@ -72,16 +72,16 @@ mixin contenidoGrid(text)
     p=text
 
 //- Links a contenidos next up/related
-mixin relatedLink(a="#", n="Vamos al link anterior")
- .m-relatedLink.-flex
+mixin relatedLink(no="",a="#", n="Vamos al link anterior")
+ div(class="m-relatedLink -flex "+no)
   h3.m-relatedLink__title Anterior
   ul.m-relatedLink__link
    li: a(class="m-nextUpLink__element", href=""+a)
     .m-relatedLink__img
     span=n
 
-mixin nextUpLink(a="#", n="Vamos al link seguiente ahora!!")
- .m-nextUpLink.-flex
+mixin nextUpLink(no="", a="#", n="Vamos al link seguiente ahora!!")
+ div(class="m-nextUpLink -flex "+no)
   h3.m-nextUpLink__title Siguiente
   ul.m-nextUpLink__link
    li: a(class="m-nextUpLink__element", href=""+a)

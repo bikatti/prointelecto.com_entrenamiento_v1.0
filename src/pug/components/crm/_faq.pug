@@ -3,11 +3,26 @@
   div(class="o-article__wrapper", data-artucle-title="overview")
    article
     div
-     +titleContent(title)
-    div
-      +contenidoGrid(`The Atlassian brand is  anchored in teamwork; around the momentum, progress, and pure achievement of people coming together. Marketing plays an important part in reinforcing this idea. Across touchpoints, we acknowledge the true story of teamwork - that it’s complex, chaotic, messy, but important - while helping customers understand the role our products in combating this complexity.`)
-      +contenidoGrid(`Typically a status is used to show if a user approves or declines something (like a pull request in Bitbucket) or if an entity is private (like a space in Confluence). X-small and XX-large avatars do not support status.`)
+     +titleContent('CRM - '+titleOdoo[2])
+    div.a-mparagrah
+     .a-gridElement
+      .a-gridElement__gridColumnLeft
+       div
+      .a-gridElement__gridColumnBox
+       div
+        ol
+         li #[b ¿Cómo obtengo mi usuario en Odoo para hacer uso del CRM?]
+          p Debes solicitar al Gerente Comercial o de Ventas de la sede respectiva, tu usuario y clave de acceso al Odoo, si sólo tienes acceso al Coordinador de tu Equipo de Ventas, haz la solicitud a través de él.
+          p El Gerente Comercial o de Ventas de la sede respectiva debe enviar la solicitud de creación de nuevos usuarios al Departamento de Sistemas de Conex Telecom vía correo electrónico, para que su solicitud sea procesada correctamente y sin demora deberá suministrar los datos siguientes:
+          ol
+           li Nombre y apellido
+           li Cargo.  Si es un usuario externo, se debe explicar el servicio que prestará y para qué zona o ámbito territorial
+           li Equipo de Ventas al cual pertenecerá el usuario.  Si se trata de un nuevo equipo, se debe proponer un nombre de Equipo e indicar el nombre de la persona que será el Líder del equipo.  Esta información será autorizada por la Dirección General
+           li Indicar si el usuario además de tener la posibilidad de crear Iniciativas, tendrá acceso a la creación de Oportunidades y a la vista del Flujo de Ventas
+           li Nombre para el correo electrónico interno que le será asignado al usuario, es decir, el nombre, palabra y/o números que precederán al @conex.online o @conextelecom.com
+   
+   
    .o-nextLink
-    +relatedLink()
-    +nextUpLink()
-  include _footer_firm.pug
+    +relatedLink("", linksUrl[1]+linkOdoo[1], titleOdoo[1])
+    +nextUpLink("d-none")
+  include ../_footer_firm.pug

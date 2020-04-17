@@ -1,6 +1,6 @@
 h1, h2, h3, p, small, i, span {
     color: $color-alert;
-    line-height: 2;
+    line-height: 1.8;
     @include mediaQueriesMd {
         line-height: 1.8;
     }
@@ -17,9 +17,6 @@ h1 {
 
 h2 {
     font-size: $fontS4;
-    @include mediaQueriesMd {
-        font-size: $fontSM2;
-    }
 }
 
 h3 {
@@ -27,7 +24,7 @@ h3 {
 }
 
 // Pragraph
-p, span, i {
+p, span, i, ol {
     font-size: $fontS2;
     font-weight: normal;
     @include mediaQueriesMd {
