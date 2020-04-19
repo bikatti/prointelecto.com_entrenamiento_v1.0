@@ -88,6 +88,15 @@ mixin nextUpLink(no="", a="#", n="Vamos al link seguiente ahora!!")
     .m-nextUpLink__img
     span=n
 
+//- Nav Mobile
+
 mixin navItemMobile(i="", l="", a="#", n="Link")
  li(class="nav-item "+i)
-  a(class="nav-link -colorWhite"+l , href=""+a)=n
+  a(class="nav-link -colorWhite "+l , href=""+a)=n
+
+//- FAQ
+mixin nameFaq(id="faq1", n="pregunta")
+ a(data-toggle="collapse", class="collapsed aqui" href="#"+id)
+  span=n
+  .a-iconFaq
+   .a-iconFaq__icon

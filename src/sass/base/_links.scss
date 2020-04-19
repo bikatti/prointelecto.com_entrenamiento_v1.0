@@ -12,12 +12,48 @@ a {
     }
 }
 
+.faq-list a {
+    padding-top: 12px;
+    padding-bottom: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    font-size: $fontSM2;
+    background-color: transparent;
+    transition: .5s;
+    span {
+        font-weight: 500;
+        line-height: 1.4;
+        &.collapsed {
+            color: $color-primary;
+        }
+        &:hover {
+            color: rgba($color-primary, $alpha: .8);
+        }
+        &:active, &:focus {
+            outline: none;
+            text-decoration: underline;
+        }
+    }
+    &:active, &:focus {
+        outline: none;
+    }
+}
+
 // Modificadores de Links
 .-modifierLink {
     color: $color-alert;
     text-decoration: none;
 }
-
+a.-LinkFaq {
+    font-size: $fontS2;
+    display: inline-block;
+    position: static;
+    color: $color-primary;
+    text-decoration: underline;
+    font-weight: 400;
+}
 
 
 // Links especificos con sus hover & behavior

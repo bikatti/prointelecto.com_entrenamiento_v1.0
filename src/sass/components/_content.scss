@@ -188,18 +188,36 @@ ol.-check__container li {
         transition: all .2s;
         background-color: $color-primary;
     }
+    li::before {
+        left: 15%;
+    }
     @include mediaQueriesLg {
         &::before {
             left: 12%;
+        }
+        li::before {
+            left: 14%;
         }
     }
     @include mediaQueriesSm {
         &::before {
             left: 6%;
         }
+        .faq-list &::before {
+            left: 3%;
+        }
+        .faq-list & li::before {
+            left: 6%;
+        }
     }
     @include mediaQueriesXs {
         &::before {
+            left: 12%;
+        }
+        .faq-list &::before {
+            left: 5%;
+        }
+        .faq-list & li::before {
             left: 12%;
         }
     }
