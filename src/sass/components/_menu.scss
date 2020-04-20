@@ -36,7 +36,7 @@
 .m-globalNavPrimary {
     flex: 1 1 0px;
     &__action {
-        padding: 8px 0 16px;
+        padding: 10px 0 12px;
         box-sizing: border-box;
     }
     &__item {
@@ -51,6 +51,16 @@
     display: inline-block;
     position: relative;
     user-select: none;
+}
+
+.a-globalLogo {
+    height: 32px;
+    width: 32px;
+    &__img {
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+    }
 }
 
 
@@ -160,7 +170,7 @@
         flex: 1 1 auto;
     }
     span {
-        font-size: $fontS4;
+        font-size: $fontS3;
     }
 }
 
@@ -275,7 +285,7 @@
     margin-left: -8px;
     margin-top: 12px;
     &Text {
-        font-size: $fontS3;
+        font-size: $fontS2 + 2;
         line-height: 1.2;
         font-weight: 600;
         text-overflow: ellipsis;
@@ -337,7 +347,7 @@
 // Menú Medium-mobile
 .bg-menu {
     background-color: $color-primary;
-    padding: 4px 16px;
+    padding: 4px 16px 5px;
     display: grid;
     grid-template-columns: 40px 1fr 40px;
     grid-gap: 0 10px;
@@ -355,8 +365,24 @@
 }
 .a-navLogo {
     grid-area: Logo;
-    text-align: center;
     margin-right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 14px;
+    span {
+        // padding-left: 6px;
+        padding-top: 7px;
+        font-family: $font1;
+        color: $color-lightin;
+        font-size: $fontS3;
+        line-height: 1;
+    }
+    .a-globalLogo {
+        height: 28px;
+        width: 28px;
+        margin-right: 6px;
+    }
 }
 .a-navToggler {
     grid-area: Toggler;

@@ -1,6 +1,9 @@
 .o-navMobile
  nav(class="navbar navbar-expand-lg bg-menu fixed-top")
-  a(class="navbar-brand a-navLogo -colorWhite", href=linksUrl[1]) Conex
+  a(class="navbar-brand a-navLogo -colorWhite", href=linksUrl[1])
+   .a-globalLogo
+    img.a-globalLogo__img(src=linksUrl[1]+logoResponsive[0], alt="index")
+   span Conex
   button(class="navbar-toggler a-navToggler", type="button", data-toggle="collapse", data-target="#navbarSupportedContent", aria-controls="navbarSupportedContent", aria-expanded="false", aria-label="Toggle navigation")
    //- span(class="navbar-toggler-icon")
    .a-globalNavIcon
