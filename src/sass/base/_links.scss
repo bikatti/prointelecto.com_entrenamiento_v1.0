@@ -23,7 +23,8 @@ a {
     background-color: transparent;
     transition: .5s;
     span {
-        font-weight: 500;
+        width: 98%;
+        font-weight: 600;
         line-height: 1.4;
         &.collapsed {
             color: $color-primary;

@@ -13,103 +13,105 @@
           div
             ol(class="wow fadeInUp faq-list", style="visibility: visible; animation-name: fadeInUp;")
              li
-              +nameFaq("faq1","1) ¿Cómo obtengo mi usuario en Odoo para hacer uso del CRM?")
+              +nameFaq("faq1","1. ¿Cómo obtengo mi usuario en Odoo para hacer uso del CRM?")
               .collapse#faq1
                p Debes solicitar al Gerente Comercial o de Ventas de la sede respectiva, tu usuario y clave de acceso al Odoo, si sólo tienes acceso al Coordinador de tu Equipo de Ventas, haz la solicitud a través de él.
                p El Gerente Comercial o de Ventas de la sede respectiva debe enviar la solicitud de creación de nuevos usuarios al Departamento de Sistemas de Conex Telecom vía correo electrónico, para que su solicitud sea procesada correctamente y sin demora deberá suministrar los datos siguientes:
-               p a) Nombre y apellido
-               p b) Cargo: Si es un usuario externo, se debe explicar el servicio que prestará y para qué zona o ámbito territorial
-               p c) Equipo de Ventas: Indicar al cual pertenecerá el usuario.  Si se trata de un nuevo equipo, se debe proponer un nombre de Equipo e indicar el nombre de la persona que será el Líder del equipo.  Esta información será autorizada por la Dirección General
-               p d) Tipo de usuario: Indicar si el usuario además de tener la posibilidad de crear Iniciativas, tendrá acceso a la creación de Oportunidades y a la vista del Flujo de Ventas
-               p e) Correo electronico: Indicar nombre para el correo electrónico interno que le será asignado al usuario, es decir, el nombre, palabra y/o números que precederán al @conex.online o @conextelecom.com
+               p #[b a)] Nombre y apellido de la persona
+               p #[b b)] Nombre del Cargo.  Si es un usuario externo, se debe explicar el servicio que prestará y para qué zona o ámbito territorial
+               p #[b c)] Equipo de Ventas al cual pertenecerá el usuario.  Si se trata de un nuevo equipo, se debe proponer un nombre de Equipo e indicar el nombre de la persona que será el Líder del equipo.  Esta información deberá estar autorizada por la Dirección General
+               p #[b d)] Configuración del usuario. Se debe indicar si el usuario además de tener la posibilidad de crear Iniciativas, tendrá acceso a la creación de Oportunidades y a la vista del Flujo de Ventas
+               p #[b e)] Correo electrónico @conextelecom.com. Si la persona no tiene asignado un correo de la empresa, indique el nombre, palabra y/o números que precederán al @conextelecom.com
              
+             //-  Por aquí voy
              li
-              +nameFaq("faq2","2) ¿Cómo se crea una Iniciativa?")
+              +nameFaq("faq2","2. ¿Cómo se crea una Iniciativa?")
               .collapse#faq2
-               p En el menú principal del CRM que se muestra como una cinta azul en la parte superior de la pantalla, podrás ver la opción "Iniciativa", al hacer clic en ella podrás visualizar el panel de "Iniciativas". Podrás ver un poco más abajo una especie de botón de color verde con la palabra "Crear", al hacer clic en este botón se abrirá el formulario en donde podrás registrar toda la información del prospecto.
+               p En el menú principal del CRM que se muestra como una cinta azul en la parte superior de la pantalla, podrás ver la opción "Iniciativa", al hacer clic en ella  visualizarás el panel de "Iniciativas". Podrás ver un poco más abajo un botón de color verde con la palabra "Crear", al hacer clic en este botón se abrirá el formulario en donde podrás registrar toda la información del prospecto.
                p Procura llenar la siguiente información mínima:
-               p a) Nombre de la Iniciativa. (Este campo es obligatorio)
-               p El nombre de las Iniciativas y Oportunidades creadas por el personal de ventas se configurará con los siguientes elementos y orden "(TIPO DE SERVICIO) / (PLAN EN MB) / (SECTOR o URBANIZACION) / (NOMBRE DEL EDIFICIO)".  Ejemplo 1:  HOGAR / 10 MB / GUATAPARO / CASABLANCA; Ejemplo 2: EMPRESAS / 100 MB / EL VIÑEDO / TORRE MOVISTAR.
-               p Si se trata de un usuario que maneja cuentas de Redes Sociales, deberá colocar "(CIUDAD) / (RED SOCIAL) / (TIPO DE SERVICIO)". Ejemplo 1:  CARACAS / INSTAGRAM / HOGAR. Ejemplo 2: VALENCIA / FACEBOOK / EMPRESAS.
-               p b) Nombre del prospecto. (Este campo es obligatorio) Si se trata de una persona natural, se debe colocar el nombre de la persona tanto en el campo de "Nombre de la Compañía"  como en el campo de "Nombre del Contacto".  Si se trata de una empresa, se debe colocar el nombre de la empresa en el campo de "Nombre de Compañía" y el nombre de la persona contacto de la empresa en el campo de "Nombre del Contacto".
-               p c) Correo electrónico (Este campo es obligatorio)
-               p d) Teléfono. (Este campo es obligatorio)
-               p e) Dirección. Como mínimo el nombre de la urbanización, el sector, el municipio, la ciudad, estado y país. (Campo Obligatorio)
-               p f) Usuario al que ha sido asignado
-               p g) Equipo de Ventas. NOTA: Si no se visualiza el Equipo de Ventas al momento de seleccionarlo, se debe proceder a verificar si la Compañía o Sede a la que está suscrito el Equipo de Ventas es la que se encuentra debidamente seleccionada.
+               p #[b a)] Nombre de la Iniciativa. Deberá redactarse en lo posible de acuerdo a la respuesta de la pregunta 4. (Este campo es obligatorio)
+               p #[b b)] Nombre del prospecto. Si se trata de una persona natural, se debe colocar el nombre de la persona tanto en el campo de "Nombre de la Compañía"  como en el campo de "Nombre del Contacto".  Si se trata de una empresa, se debe colocar el nombre de la empresa en el campo de "Nombre de Compañía" y el nombre de la persona contacto de la empresa en el campo de "Nombre del Contacto". (Este campo es obligatorio)
+               p #[b c)] Correo electrónico (Este campo es obligatorio)
+               p #[b d)] Teléfono. (Este campo es obligatorio)
+               p #[b e)] Dirección. Como mínimo el nombre de la urbanización, el sector, el municipio, la ciudad, estado y país. (Este campo Obligatorio)
+               p #[b f)] Usuario al que ha sido asignada la Iniciativa. Por defecto la iniciativa quedará asignada al usuario que la está registrando, no obstante, esta asignación puede ser cambiada en cualquier momento.  Por ejemplo: las Iniciativas que son registradas por el equipo de Redes Sociales vienen asignadas por defecto a los usuarios de este equipo, posteriormente el líder de este equipo, que es la Gerente Comercial Nacional, las asigna a los Usuarios y Equipos de Ventas que correspondan según el tipo de servicio y zona del país en qué está ubicado el prospecto.
+               p #[b g)] Equipo de Ventas. Cuando no se visualiza el Equipo de Ventas al momento de seleccionarlo, se debe proceder a verificar si la Compañía o Sede a la que está suscrito el Equipo de Ventas es la que se encuentra debidamente seleccionada. Ver tutorial en el siguiente enlace #[a(class="-LinkFaq", href="https://www.loom.com/share/502dc50c028e4329831d4126c26648c9", target="_blank") CRM - Cómo asignar Iniciativas a Equipos de Ventas de Conex Aragua]
 
              li
-              +nameFaq("faq3","3) ¿Cómo se crea una Oportunidad?")
+              +nameFaq("faq3","3. ¿Cómo se crea una Oportunidad?")
               .collapse#faq3
                p Existen dos formas de crear Oportunidades:
-               p #[b a) Desde el panel de Flujo de Ventas:] La primera pantalla que se visualiza al entrar en el módulo de CRM es el panel del "Flujo de Ventas", en este panel podrás visualizar una especie de botón de color verde con la palabra "Crear", al hacer clic en este botón se abrirá el formulario en donde podrás registrar toda la información de la Oportunidad. 
-               p Si estás dentro de otro panel del mismo CRM, podrás acceder al panel de "Flujo de Ventas" haciendo clic en la opción "Ventas" que se muestra en el menú en la parte superior de la pantalla, y en el menú que se despliega inmediatamente debes hacer clic en la opción "Flujo de Ventas.
-               p #[b b) Convirtiendo una Iniciativa en Oportunidad desde el panel de Iniciativa:] Debes estar situado en el panel de "Iniciativas", al cual podrás acceder haciendo clic en la opción "Iniciativas" que se muestra en el menú de la parte superior de la pantalla del módulo de CRM.  Selecciona del listado que aparece en este Panel, la Iniciativa que deseas convertir en Oportunidad, se abrirá la ficha de la Iniciativa y allí visualizaremos un botón de color verde con la frase "Convertir en Oportunidad", al hacer clic en esta opción se abrirá una primera ventana en la que se deberá seleccionar si se trata de una Oportunidad nueva o si la queremos fusionar con una ya existente; tendremos la opción de reasignar a un usuario y equipo diferente o dejarlo con los ya seleccionados; y por último debemos indicar si se trata de un cliente nuevo o de uno ya existente. Para esto último podemos abrir en otra pestaña del explorador el módulo de Contactos y buscar al cliente por su nombre o correo electrónico para asegurarnos de su inexistencia en el la bases de datos de Contactos del Odoo.  Si el cliente no existe en la base de datos de contacto, deberás crearlo allí, entes de continuar con el proceso de creación de la Oportunidad.
+               p #[b 3.1. Desde el panel de Flujo de Ventas:] La primera pantalla que se visualiza al entrar en el módulo de CRM es el panel del "Flujo de Ventas", en este panel podrás visualizar un botón de color verde con la palabra "Crear", al hacer clic en este botón se abrirá el formulario en donde podrás registrar toda la información de la Oportunidad.
+               p Si estás dentro de otro panel del mismo CRM, podrás acceder al panel de "Flujo de Ventas" haciendo clic en la opción "Ventas" que se muestra en el menú en la parte superior de la pantalla, y en el menú que se despliega inmediatamente debes hacer clic en la opción "Flujo de Ventas".
+               p #[b 3.2. Convirtiendo una Iniciativa en Oportunidad desde el panel de Iniciativa:] Debes estar situado en el panel de "Iniciativas", al cual podrás acceder haciendo clic en la opción "Iniciativas" que se muestra en el menú de la parte superior de la pantalla del módulo de CRM.  Selecciona del listado que aparece en este Panel, la Iniciativa que deseas convertir en Oportunidad, se abrirá la ficha de la Iniciativa y allí visualizaremos un botón de color verde con la frase "Convertir en Oportunidad", al hacer clic en esta opción se abrirá una primera ventana en la que se deberá seleccionar si se trata de una Oportunidad nueva o si la queremos fusionar con una ya existente; tendremos la opción de reasignar a un usuario y equipo diferente o dejarlo con los ya seleccionados; y por último debemos indicar si se trata de un cliente nuevo o de uno ya existente. Para esto último podemos abrir en otra pestaña del explorador el módulo de Contactos y buscar al cliente por su nombre o correo electrónico para asegurarnos de su inexistencia en el la bases de datos de Contactos del Odoo.  Si el cliente no existe en la base de datos de contacto, deberás crearlo allí, entes de continuar con el proceso de creación de la Oportunidad.
                p Toda Oportunidad debe contar con la siguiente información, que se debe ir completando a la brevedad posible durante la interacción con el cliente:
-               p a) Nombre de la Oportunidad.
-               p El nombre de las Iniciativas y Oportunidades creadas por el personal de ventas se configurará con los siguientes elementos y orden "(TIPO DE SERVICIO) / (PLAN EN MB) / (SECTOR o URBANIZACION) / (NOMBRE DEL EDIFICIO)".  Ejemplo 1:  HOGAR / 10 MB / GUATAPARO / CASABLANCA; Ejemplo 2: EMPRESAS / 100 MB / EL VIÑEDO / TORRE MOVISTAR.
-               p Si se trata de un usuario que maneja cuentas de Redes Sociales, deberá colocar "(CIUDAD) / (RED SOCIAL) / (TIPO DE SERVICIO)". Ejemplo 1:  CARACAS / INSTAGRAM / HOGAR. Ejemplo 2: VALENCIA / FACEBOOK / EMPRESAS.
-               p b) Ingreso estimado. En este campo se colocará el monto de la mensualidad del servicio en que está interesado el cliente.
-               p c) Probabilidad. De acuerdo al criterio de quién está creando la Oportunidad se deberá colocar un estimado, un numero del 1 al 100 que represente la probabilidad de que la venta se concrete.
-               p d) Cierre previsto. Se debe colocar una fecha estimada de cierre de acuerdo a la experiencia de quien crea la oportunidad.
-               p e) Nombre del cliente.
-               p El Cliente debe estar ya registrado en el módulo de Contactos de Odoo, si es así en el formulario de la Oportunidad, solo deberá seleccionarlo del menú desplegable que se muestra en el campo de "Cliente".  Si el cliente no aparece, el usuario que está creando la Oportunidad o convirtiéndola a partir de una Iniciativa, deberá primero crear al Cliente en la base de datos de Contactos del Odoo, para proceder a ello deberá colocar la mayor cantidad de datos posibles sobre el mismo. Una vez creado el Cliente se podrá seguir con la creación de la Oportunidad seleccionando al cliente por su nombre.
-               p En la ventana de creación de Oportunidad se verificará, si se trata de una persona natural, que el campo de "Nombre de Compañía" cuenta con el mismo nombre del cliente y el mismo se repetirá en el campo de "Nombre del Contacto"; si se trata de una empresa, se debe colocar el nombre de la empresa en el campo de "Nombre de Compañía" y el nombre de la persona contacto de la empresa en el campo de "Nombre del Contacto".
-               p f) Dirección. Los más detallada posible, siempre indicando, Sector o Urbanización, Ciudad, Estado y País.  Todos estos datos se irán mejorando en la medida que se interactúe con el cliente.
-               p g) Correo electrónico.
-               p h) Teléfono.
-               p i) Usuario al que ha sido asignado.
-               p j) Equipo de Ventas. NOTA: Si no se visualiza el Equipo de Ventas al momento de seleccionarlo, se debe proceder a verificar si la Compañía o Sede a la que está suscrito el Equipo de Ventas es la que se encuentra debidamente seleccionada.
+               p #[b a)] Nombre de la Oportunidad. Deberá redactarse en lo posible de acuerdo a la respuesta de la pregunta 4.
+               p #[b b)] Ingreso estimado. En este campo se colocará el monto de la mensualidad del servicio en que está interesado el cliente.
+               p #[b c)] Probabilidad. De acuerdo al criterio de quién está creando la Oportunidad se deberá colocar un estimado, un numero del 1 al 100 que represente la probabilidad de que la venta se concrete.
+               p #[b d)] Cierre previsto. Se debe colocar una fecha estimada de cierre de acuerdo a la experiencia de quien crea la oportunidad.
+               p #[b e)] Nombre del cliente. El Cliente debe estar ya registrado en el módulo de Contactos de Odoo, si es así en el formulario de la Oportunidad, solo deberá seleccionarlo del menú desplegable que se muestra en el campo de "Cliente".  Si el cliente no aparece, el usuario que está creando la Oportunidad o convirtiéndola a partir de una Iniciativa, deberá primero crear al Cliente en la base de datos de Contactos del Odoo, para proceder a ello deberá colocar la mayor cantidad de datos posibles sobre el mismo. Una vez creado el Cliente se podrá seguir con la creación de la Oportunidad seleccionando al cliente por su nombre.
+               p En la ventana de creación de Oportunidad se verificará, si se trata de una persona natural, en este caso el campo de "Nombre de Compañía" cuenta con el mismo nombre del cliente y el mismo se repetirá en el campo de "Nombre del Contacto"; si se trata de una empresa, se debe colocar el nombre de la empresa en el campo de "Nombre de Compañía" y el nombre de la persona contacto de la empresa en el campo de "Nombre del Contacto".
+               p #[b f)] Dirección. Los más detallada posible, siempre indicando, Sector o Urbanización, Ciudad, Estado y País.  Todos estos datos se irán mejorando en la medida que se interactúe con el cliente.
+               p #[b g)] Correo electrónico.
+               p #[b h)] Teléfono.
+               p #[b i)] Usuario al que ha sido asignado.
+               p #[b j)] Equipo de Ventas. Si no se visualiza el Equipo de Ventas al momento de seleccionarlo, se debe proceder a verificar si la Compañía o Sede a la que está suscrito el Equipo de Ventas es la que se encuentra debidamente seleccionada. Ver tutorial en el siguiente enlace #[a(class="-LinkFaq", href="https://www.loom.com/share/502dc50c028e4329831d4126c26648c9", target="_blank") CRM - Cómo asignar Iniciativas a Equipos de Ventas de Conex Aragua]
 
              li
-              +nameFaq("faq4","4) ¿Cómo se debe redactar el nombre de una Iniciativa u Oportunidad?")
+              +nameFaq("faq4","4. ¿Cómo se debe redactar el nombre de una Iniciativa u Oportunidad?")
               .collapse#faq4
-               p El nombre de las Iniciativas y Oportunidades creadas por el personal de ventas se configurará con los siguientes elementos y orden "(TIPO DE SERVICIO) / (PLAN EN MB) / (SECTOR o URBANIZACION) / (NOMBRE DEL EDIFICIO)".  Ejemplo 1:  HOGAR / 10 MB / GUATAPARO / CASABLANCA; Ejemplo 2: EMPRESAS / 100 MB / EL VIÑEDO / TORRE MOVISTAR.
-               p Si se trata de un usuario que maneja cuentas de Redes Sociales, deberá colocar "(CIUDAD) / (RED SOCIAL) / (TIPO DE SERVICIO)". Ejemplo 1:  CARACAS / INSTAGRAM / HOGAR. Ejemplo 2: VALENCIA / FACEBOOK / EMPRESAS.
+               p El nombre de las Iniciativas y Oportunidades creadas por el personal se configurará con los siguientes elementos y orden:
+               p #[b.uppercase Tipo de servicio / Plan en MB / Sector o Urbanización / Nombre de edificio]
+               p Ejemplo 1: #[.uppercase Hogar / 10 MB / Guataparo / Casablanca]
+               p Ejemplo 1: #[.uppercase Empresas / 100 MB / El Vinedo / Torre Movistar]
+               p Si se trata de un usuario que maneja cuentas de Redes Sociales, deberá colocar:
+               p #[b.uppercase Ciudad / Red social / Tipo de servicio]
+               p Ejemplo 1: #[.uppercase Caracas / Instagram / Hogar]
+               p Ejemplo 1: #[.uppercase Valencia / Facebook / empresas]
 
              li
-              +nameFaq("faq5","5) ¿Qué monto se coloca en el campo de Ingreso Estimado de una Oportunidad?")
+              +nameFaq("faq5","5. ¿Qué monto se coloca en el campo de Ingreso Estimado de una Oportunidad?")
               .collapse#faq5
                p En este campo se colocará el monto de la mensualidad del servicio en que está interesado el cliente.
 
              li
-              +nameFaq("faq6","6) ¿Cómo se asigna una Iniciativa / Oportunidad a un usuario?")
+              +nameFaq("faq6","6. ¿Cómo se asigna una Iniciativa / Oportunidad a un usuario?")
               .collapse#faq6
                p Cada vez que se crea una Iniciativa u Oportunidad la aplicación la asigna por defecto al usuario que la está creando.  Y en el caso de las Iniciativas que se crean de forma automática al recibir correos de las cuentas de correos genéricas de la empresa, la aplicación las asigna al Usuario líder del Equipo de Ventas al que se le ha asignado la lectura de estos correos.
                p Los líderes de los Equipos de Ventas, entre ellos Gerentes de Ventas y Coordinadores tienen la potestad de asignar y reasignar Iniciativas y/o Oportunidades a los miembros de sus equipos.  Igual potestad tendrán los Directores y Gerentes Comerciales con relación a los Equipos de los Gerentes de Ventas sujetos a su supervisión.
-               p Cuando se desea asignar o reasignar una Iniciativa u oportunidad, se deberá editar la misma e ir al campo de "Comercial" y allí podrá seleccionar el usuario al que desea asignarla.
-               p Cuando se selecciona un usuario, el programa traerá por defecto el Equipo de Ventas al que está asignado este usuario, no obstante, se debe estar atento a que el programa lo haga de la forma adecuada, si el programa no lo hace o trae un Equipo de Ventas que no corresponde, se debe forzar la selección, ubicando el Equipo de Ventas en el menú desplegable de este campo. Si no se visualiza el Equipo de Ventas es porque somos un Usuario Multiempresa y no hemos seleccionado la empresa o sede que corresponde al Equipo de Ventas que estamos buscando. Para solventar esto en el caso de las Iniciativas, se selecciona de empresa o sede, dentro de la pestaña titulada "Información extra", allí hay un campo con el nombre "Compañía" en donde podremos seleccionar la empresa o sede a la que pertenece el Equipo de Ventas que queremos seleccionar.  En el caso de las Oportunidades, este campo de "Compañía" está a la vista en la primera sección del formulario.
+               p Cuando se desea asignar o reasignar una Iniciativa u oportunidad, se deberá editar la misma e ir al campo de "Comercial" y seleccionar el usuario al que se desea asignar.
+               p Cuando se selecciona un usuario, el programa traerá por defecto el Equipo de Ventas al que está asignado este usuario, no obstante, se debe estar atento a que el programa lo haga de la forma adecuada, si el programa no lo hace o trae un Equipo de Ventas que no corresponde, se debe forzar la selección, ubicando el Equipo de Ventas en el menú desplegable de este campo. Si no visualiza el Equipo de Ventas que está buscando, en porque pertenece a una empresa o sede diferente a la que usted tiene configurada en la aplicación.  Para solventar esto, su usuario debe estar configurado como multiempresa. Ver la respuesta a la pregunta 8.
 
              li
-              +nameFaq("faq7","7) ¿Quiénes asignan Iniciativas / Oportunidades a los usuarios?")
+              +nameFaq("faq7","7. ¿Quiénes asignan Iniciativas / Oportunidades a los usuarios?")
               .collapse#faq7
                p Los líderes de los Equipos de Ventas, entre ellos Gerentes de Ventas y Coordinadores tienen la potestad de asignar y reasignar Iniciativas y/o Oportunidades a los miembros de sus equipos.  Igual potestad tendrán los Directores y Gerentes Comerciales con relación a los Equipos de los Gerentes de Ventas sujetos a su supervisión.
 
              li
-              +nameFaq("faq8","8) ¿Por qué no veo los Equipos de Ventas de otra zona para poder asignarles una Iniciativa / Oportunidad?")
+              +nameFaq("faq8","8. ¿Por qué no veo los Equipos de Ventas de otra zona para poder asignarles una Iniciativa / Oportunidad?")
               .collapse#faq8
-               p Si no visualiza un Equipo de Ventas es porque su Usuario no está configurado para ver las Iniciativas y Oportunidades de ese Equipo de Ventas que está buscando.  Si no es su caso, puede ser que usted sea un Usuario Multiempresa y no está seleccionado la empresa o sede que corresponde al Equipo de Ventas que está buscando. Para solventar esto en el caso de las Iniciativas, seleccione la empresa o sede, dentro de la pestaña titulada "Información extra", allí hay un campo con el nombre "Compañía" en donde podrá seleccionar la empresa o sede a la que pertenece el Equipo de Ventas que desea seleccionar.  En el caso de las Oportunidades, este campo de "Compañía" está a la vista en la primera sección del formulario.
+               p Para visualizar un Equipo de Ventas de otra sede o empresa del grupo, su Usuario debe ser Multiempresa y tener seleccionadas tanto a la empresa a la que pertenece como a la otra empresa o sede que desea visualizar al mismo tiempo, en el menú principal de la aplicación, que se encuentra en la franja de color azul que aparece en la parte superior de la pantalla. Luego, si desea asignar una Iniciativa, antes de seleccionar el Equipo de Ventas, deberá ir la pestaña titulada "Información extra" dentro de la Iniciativa editada, y en el campo con el nombre "Compañía" debe seleccionar la empresa o sede a la que pertenece el Equipo de Ventas que desea seleccionar.  En el caso de las Oportunidades, este campo de "Compañía" está a la vista en la primera sección del formulario.
                p Ver tutorial en el siguiente enlace #[a(class="-LinkFaq", href="https://www.loom.com/share/502dc50c028e4329831d4126c26648c9", target="_blank") CRM - Cómo asignar Iniciativas a Equipos de Ventas de Conex Aragua]
              
              li
-              +nameFaq("faq9","9) ¿Qué Iniciativas visualiza cada usuario?")
+              +nameFaq("faq9","9. ¿Qué Iniciativas visualiza cada usuario?")
               .collapse#faq9
                p Cada Coordinador va a ver las Iniciativas de su equipo y cada Vendedor verá las Iniciativas que él ha creado y las que le han sido asignadas.  Los Gerentes Comerciales y de Ventas visualizarán todas las Iniciativas que se hayan creado para la zona o ámbito territorial en el que actúan.
              
              li
-              +nameFaq("faq10","10) ¿Qué Oportunidades visualiza cada usuario?")
+              +nameFaq("faq10","10. ¿Qué Oportunidades visualiza cada usuario?")
               .collapse#faq10
                p Cada Coordinador va a ver las Oportunidades de su equipo y cada Vendedor verá las oportunidades que él ha creado y las que le han sido asignadas.  Los Gerentes Comerciales y de Ventas visualizarán todas las Oportunidades que se hayan creado para sus zonas o ámbito territorial en el que actúan.
              
              li
-              +nameFaq("faq11","11) ¿Qué se hace con las Iniciativas que provienen de correos genéricos de la empresa que contienen información relacionada con otros departamentos?")
+              +nameFaq("faq11","11. ¿Qué se hace con las Iniciativas que provienen de correos genéricos de la empresa que contienen información relacionada con otros departamentos?")
               .collapse#faq11
-               p Corresponde a los Gerentes o a los Coordinadores en que estos delegue la revisión y asignación de Iniciativas, canalizar esta información hacia los departamentos respectivos.  Por ejemplo, si se trata de un cliente notificando un pago realizado, debe procederse a reenviar esta información al Jefe de Facturación y Cobranza de la sede correspondiente, y responder al cliente que la información está siendo procesada y amablemente orientarlo para que en una próxima oportunidad dirija este tipo de correspondencia al correo específico que le llega a ese departamento.
+               p Corresponde a los Gerentes o a los Coordinadores en que estos deleguen la revisión y asignación de Iniciativas, canalizar esta información hacia los departamentos respectivos.  Por ejemplo, si se trata de un cliente notificando un pago realizado, debe procederse a reenviar esta información al Jefe de Facturación y Cobranza de la sede correspondiente, y responder al cliente que la información está siendo procesada y amablemente orientarlo para que en una próxima oportunidad dirija este tipo de correspondencia al correo específico que le llega a ese departamento.
 
              li
-              +nameFaq("faq12","12) ¿Por qué  debemos tener mucho cuidado al usar la opción de fusionar Iniciativas?")
+              +nameFaq("faq12","12. ¿Por qué  debemos tener mucho cuidado al usar la opción de fusionar Iniciativas?")
               .collapse#faq12
-               p No se recomienda fusionar iniciativas, porque a través de esta opción es muy probable que se pierda información, ya que a los correos genéricos de la empresa llegan solicitudes muy diversas, lo adecuado es analizar uno por uno para canalizarlo de forma correcta.
+               p No se recomienda fusionar iniciativas, porque a través de esta opción es muy probable que se pierda información, ya que a los correos genéricos de la empresa llegan solicitudes muy diversas, lo adecuado es analizar una por una cada Iniciativa para canalizarla de forma correcta.
     
    
    .o-nextLink

@@ -42,8 +42,8 @@
         margin-top: 5px;
         letter-spacing: 0;
     }
-    @include mediaQueriesSm {
-        margin-top: 60px;
+    @include mediaQueriesLg {
+        margin-top: 70px;
         max-width: 90%;
         &__pg {
             font-size: $fontS3;
@@ -123,6 +123,9 @@
     }
     p:last-child {
         padding-bottom: 0;
+    }
+    b, h2 {
+        color: $color-primary;
     }
 }
 

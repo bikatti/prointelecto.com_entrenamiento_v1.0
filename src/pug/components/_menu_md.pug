@@ -11,7 +11,14 @@
   
   .collapse.navbar-collapse.a-navItemLink#navbarSupportedContent
    ul.navbar-nav
+    +navItemMobile("", "", linksUrl[1], 'Inicio')
     +navItemMobile("", "", linksUrl[1]+linkOdoo[0], titles[0])
+    +navItemMobile("", "", "#", titles[1])
+    +navItemMobile("", "", "#", titles[2])
+    +navItemMobile("", "", "#", titles[8])
+    +navItemMobile("", "", "#", titles[4])
+    +navItemMobile("", "", "#", titles[6])
+    +navItemMobile("", "", "#", titles[7])
 
   //- .navbar-collapse.a-navItemLink.o-menuContentMob(id=titles[0])
    ul.navbar-nav
@@ -22,3 +29,6 @@
 
 
   .m-buscador
+
+div
+ .a-curtain

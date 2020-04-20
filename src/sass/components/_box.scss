@@ -98,7 +98,19 @@
         @include thumnailBox();
     }
     &2 {
-        @include thumnailBox(url("../img/concepto.jpg"));
+        @include thumnailBox(url("../img/box_img/ventas.png"));
+        padding-bottom: 320px;
+    }
+    &3 {
+        @include thumnailBox(url("../img/box_img/administracion.png"));
+        padding-bottom: 320px;
+    }
+    &4 {
+        @include thumnailBox(url("../img/box_img/operacion.png"));
+        padding-bottom: 320px;
+    }
+    &5 {
+        @include thumnailBox(url("../img/box_img/empresa.png"));
         padding-bottom: 320px;
     }
 }
