@@ -151,12 +151,16 @@
     flex-grow: 1;
     overflow: hidden;
     &__container {
+        
         padding-bottom: 1px;
         text-overflow: ellipsis;
         white-space: wrap;
         line-height: 1.2;
         display: block;
         flex: 1 1 auto;
+    }
+    span {
+        font-size: $fontS4;
     }
 }
 
@@ -257,7 +261,7 @@
     &Text {
         font-size: $fontS1;
         line-height: 1;
-        text-transform: uppercase;
+        // text-transform: uppercase;
         min-width: 0;
         flex: 1 1 auto;
     }
@@ -271,7 +275,7 @@
     margin-left: -8px;
     margin-top: 12px;
     &Text {
-        font-size: $fontS1;
+        font-size: $fontS3;
         line-height: 1.2;
         font-weight: 600;
         text-overflow: ellipsis;

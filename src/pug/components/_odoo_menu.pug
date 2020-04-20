@@ -16,7 +16,7 @@
   .m-revealInner
   //- Aquí comienza el header del nav
   .m-containerHeading
-   +menuSectionHeader(img, titles[0], titles[0])
+   +menuSectionHeader(titles[0])
    a.m-containerHeading__brand.d-none(href=linksUrl[1])
     .m-containerHeading__img
   //- Links a los contenidos
@@ -25,9 +25,20 @@
     .m-scroll__content
      //-  div(aria-label="otro" role="group")
      //-   +itemContent("", "","#","Como estas")
-     div(aria-label="Cosas Nuevas" role="group")
-      +titleGroupContent("","CRM - Cómo usarlo")
+     div(aria-label="Odoo CRM", role="group")
+      +titleGroupContent("","Odoo CRM")
       +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[0],titleOdoo[0])
+      +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[1],titleOdoo[1])
+      +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[2],titleOdoo[2])
+    
+     div(aria-label="Odoo Proyectos", role="group")
+      +titleGroupContent("","Odoo Proyectos")
+      +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[0],titleOdoo[0])
+      +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[1],titleOdoo[1])
+      +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[2],titleOdoo[2])
+
+     div(aria-label="Odoo Contactos", role="group")
+      +titleGroupContent("","Odoo Contactos")
       +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[1],titleOdoo[1])
       +itemContent("itemContentLink-1"," -modifierLink",linksUrl[1]+linkOdoo[2],titleOdoo[2])
     //- Menu global
