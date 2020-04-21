@@ -285,7 +285,7 @@
     margin-left: -8px;
     margin-top: 12px;
     &Text {
-        font-size: $fontS2 + 2;
+        font-size: $fontS2;
         line-height: 1.2;
         font-weight: 600;
         text-overflow: ellipsis;
@@ -395,11 +395,46 @@
     padding-left: 12px;
 }
 .o-menuContentMob {
-    // Hello
+    display: none;
     position: absolute;
     left: -100%;
 }
 
 .navbar {
     box-shadow: $shadow2;
+}
+
+.nav-link {
+    &:hover {
+        color: $color-secondary;
+    }
+}
+
+
+.dropdown-toggle::after {
+    transform: rotate(90deg);
+    border-top: 0;
+    position: relative;
+    top: 6px;
+    content: url('../img/icons/arrow_head_white.svg');
+}
+
+.dropdown-menu {
+    margin: 5px 20px;
+    padding: 0;
+    font-size: $fontS1;
+    font-weight: 600;
+    color: $color-lightin;
+    background-color: transparent;
+    border: none;
+}
+
+.dropdown-item {
+    font-size: $fontSM2;
+    padding: 6px 20px;
+    margin: 4px 0;
+    &:hover, &:focus, &:active {
+        border-radius: 4px;
+        color: $color-primary;
+    }
 }

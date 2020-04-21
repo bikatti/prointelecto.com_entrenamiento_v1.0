@@ -12,7 +12,21 @@
   .collapse.navbar-collapse.a-navItemLink#navbarSupportedContent
    ul.navbar-nav
     +navItemMobile("", "", linksUrl[1], 'Inicio')
-    +navItemMobile("", "", linksUrl[1]+linkOdoo[0], titles[0])
+    // Odoo
+    li(class="nav-item dropdown")
+     a(class="nav-link -colorWhite dropdown-toggle" , href="#", id="navbarDropdown", role="button" data-toggle="dropdown", aria-haspopup="true", aria-expanded="false") #{titles[0]}
+     div(class="dropdown-menu", aria-labelledby="navbarDropdown") Odoo CRM
+      a(class="dropdown-item -colorWhite", href=linksUrl[1]+linkOdoo[0]) #{titleOdoo[0]}
+      a(class="dropdown-item -colorWhite", href=linksUrl[1]+linkOdoo[1]) #{titleOdoo[1]}
+      a(class="dropdown-item -colorWhite", href=linksUrl[1]+linkOdoo[2]) #{titleOdoo[2]}
+      | Odoo Proyectos
+      a(class="dropdown-item -colorWhite", href="#") #{titleOdoo[0]}
+      a(class="dropdown-item -colorWhite", href="#") #{titleOdoo[1]}
+      a(class="dropdown-item -colorWhite", href="#") #{titleOdoo[2]}
+      | Odoo Contactos
+      a(class="dropdown-item -colorWhite", href="#") #{titleOdoo[1]}
+      a(class="dropdown-item -colorWhite", href="#") #{titleOdoo[2]}
+
     +navItemMobile("", "", "#", titles[1])
     +navItemMobile("", "", "#", titles[2])
     +navItemMobile("", "", "#", titles[8])
@@ -20,7 +34,7 @@
     +navItemMobile("", "", "#", titles[6])
     +navItemMobile("", "", "#", titles[7])
 
-  //- .navbar-collapse.a-navItemLink.o-menuContentMob(id=titles[0])
+  .navbar-collapse.a-navItemLink.o-menuContentMob(id=titles[0])
    ul.navbar-nav
     +navItemMobile("", "", linksUrl[1]+linkOdoo[0], titleOdoo[0])
     +navItemMobile("", "", linksUrl[1]+linkOdoo[1], titleOdoo[1])
