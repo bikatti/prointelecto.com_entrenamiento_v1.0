@@ -24,7 +24,7 @@ a {
     transition: .5s;
     span {
         width: 98%;
-        font-weight: 600;
+        font-weight: 500;
         line-height: 1.4;
         &.collapsed {
             color: $color-primary;
@@ -39,6 +39,11 @@ a {
     }
     &:active, &:focus {
         outline: none;
+    }
+    @include mediaQueriesSm {
+        span {
+            width: 90%;
+        }
     }
 }
 

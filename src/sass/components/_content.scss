@@ -78,7 +78,7 @@
         padding-right: 0;
     }
     &__gridColumnLeft {
-        max-width: #{calc(9% - 16px)};
+        max-width: #{calc(12% - 16px)};
         min-width: #{calc(8.33333% - 16px)};
         margin-right: 8px;
         margin-left: 8px;
@@ -98,7 +98,7 @@
         }
     }
     &__gridColumnBox {
-        max-width: #{calc(84% - 16px)};
+        max-width: #{calc(77% - 16px)};
         min-width: #{calc(8.33333% - 16px)};
         margin-right: 8px;
         margin-left: 8px;
@@ -312,5 +312,29 @@ ol.-check__container li {
         &__title {
             margin-bottom: 6px;
         }
+    }
+}
+
+.m-beforeLink, .m-afterLink {
+    display: flex;
+    text-decoration: underline;
+    &:focus {
+        outline: none;
+    }
+}
+
+.m-afterLink {
+    justify-content: flex-end;
+}
+
+.a-linkArrow {
+    &__left, &__right {
+        height: 20px;
+        width: 18px;
+        position: relative;
+        bottom: 1px;
+    }
+    &__left img {
+        transform: rotate(-180deg);
     }
 }

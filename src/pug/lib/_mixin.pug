@@ -57,11 +57,12 @@ mixin linkPageMenuGlobal(a="#",n="Link abordo!!")
 
 //- Contenido de texto
 mixin titleContent(t="Pon aquí tu increíble título")
- .a-gridElement
-  .a-gridElement__gridColumnLeft
-   div
-  .a-gridElement__gridColumnBox
-   div: h2=t
+ div
+  .a-gridElement
+   .a-gridElement__gridColumnLeft
+    div
+   .a-gridElement__gridColumnBox
+    div: h2=t
 
 mixin contenidoGrid(text)
  .a-gridElement
@@ -70,6 +71,21 @@ mixin contenidoGrid(text)
   .a-gridElement__gridColumnBox
    div
     p=text
+
+mixin linkBeAfInicio(a1=".", b1="", a2=".", b2="")
+ div
+  .a-gridElement.pb-2
+   .a-gridElement__gridColumnLeft
+    div
+   .a-gridElement__gridColumnBox.container-fluid
+    .row
+     .col-6.p-0.text-left: a(class="m-beforeLink "+b1, href=""+a1)
+      .a-linkArrow__left
+       img(src=linksUrl[1]+"assets/img/icons/arrow_head.svg", alt="Arrow head Link")
+      | Anterior
+     .col-6.p-0.text-right: a(class="m-afterLink "+b2, href=""+a2) Siguiente
+      .a-linkArrow__right
+       img(src=linksUrl[1]+"assets/img/icons/arrow_head.svg", alt="Arrow head Link")
 
 //- Links a contenidos next up/related
 mixin relatedLink(no="",a="#", n="Vamos al link anterior")
