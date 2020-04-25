@@ -317,6 +317,7 @@ ol.-check__container li {
 
 .m-beforeLink, .m-afterLink {
     display: flex;
+    flex-direction: row;
     text-decoration: underline;
     &:focus {
         outline: none;
