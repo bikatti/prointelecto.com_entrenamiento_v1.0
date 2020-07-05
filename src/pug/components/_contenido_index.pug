@@ -6,21 +6,21 @@
   .o-boxesUniverse
    .-boxPadding.-col1
     +boxWithText(linksUrl[1]+linkOdoo[0], "assets/img/odoo/icon_crm.png", "Odoo Crm", titles[0]+" CRM" , "En está sección encontraras Conceptos y definiciones, Normativas y Preguntas frecuentes")
-    +boxWithText("#", "assets/img/saeplus/saeplus_logo.png", "", titles[1], "Abonados, contratos, facturación y control de pagos")
-    +boxWithAll("2", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[6], "Organigramas, Funciones y Cargos, Normativas y Procedimientos, Formatos y Controles, Flujogramas de procesos")
+    //- +boxWithText("#", "assets/img/saeplus/saeplus_logo.png", "", titles[1], "Abonados, contratos, facturación y control de pagos")
+     +boxWithAll("2", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[6], "Organigramas, Funciones y Cargos, Normativas y Procedimientos, Formatos y Controles, Flujogramas de procesos")
 
-   .-boxPadding.-col2
+   //-.-boxPadding.-col2
     +boxWithText("#", "assets/img/odoo/icon_project.png", "", titles[3] , "Zonas con cobertura y edificios verticalizados")
     +boxWithImg("5", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[8])
     +boxWithImg("3", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[4])
 
-   .-boxPadding.-col3
+   //-.-boxPadding.-col3
     +boxWithText("#", "assets/img/odoo/icon_chat.png", "", titles[5] , "Clientes y usuarios")
     +boxWithText("#", "assets/img/profit/profit_logo.png", "", titles[2], "Administración, pagos, compras y almacén")
     +boxWithAll("4", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[7], "Organigramas, Funciones y Cargos, Normativas y Procedimientos, Formatos y Controles, Flujogramas de procesos")
   
   //- Footer firm
-  .o-footerFirmDev.-index
-   .justify-content-center.align-items-center.d-flex
-    p Esta página fue hecha por
-    a(href=linksUrl[1]): button(class="btn -btnMonlogo", type="button") Monlogo
+.o-footerFirmDev.-index
+ .justify-content-center.align-items-center.d-flex.m-footerFirm
+  p Esta página fue hecha por
+  a(href=monlogo[0], target="_blank"): button(class="btn -btnMonlogo", type="button") Monlogo

@@ -10,3 +10,20 @@
     display: flex;
     flex: 1 1 auto;
 }
+
+.o-colorIndex {
+    height: 100vh;
+    .o-footerFirmDev.-index {
+        display: flex;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+    }
+    .m-footerFirm {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    @include mediaQueriesMd {
+        height: 92vh;
+    }
+}

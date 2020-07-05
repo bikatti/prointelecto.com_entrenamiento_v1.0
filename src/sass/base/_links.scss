@@ -6,10 +6,6 @@ a {
     &:hover {
         text-decoration: none;
     }
-    &:focus {
-        outline-offset: 2px;
-        outline: 2px solid $color-primary;
-    }
 }
 
 .faq-list a {
