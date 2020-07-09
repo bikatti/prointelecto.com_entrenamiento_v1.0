@@ -28,12 +28,12 @@ mixin boxWithAll(i="2", a="#", img="assents/img/icons/arrow_head.svg", n="", tit
 
 
 //- Menu de Contenidos
-mixin menuSectionHeader(title="Título")
+mixin menuSectionHeader(img,title="Título")
  span.m-containerHeading__itemHeader.-linkHover
   .a-imgHeader
    .a-imgHeader__icon
     .a-imgHeader__container
-     .a-imgHeader__img
+     img(src=linksUrl[1]+""+img, alt="logo de la sección"+title).a-imgHeader__img
   .a-titleHeader
    .a-titleHeader__container
     span.a-titleHeader__title=title

@@ -2,25 +2,26 @@
  .o-mrContent.-index
   .a-pageTitle
    h1.a-pageTitle__text Conex Telecom Aragua
-   h2.a-pageTitle__pg Bienvenido a la página web de entrenamiento y consulta
+   h2.a-pageTitle__pg Bienvenido al sitio web de capacitación para vendedores
   .o-boxesUniverse
    .-boxPadding.-col1
-    +boxWithText(linksUrl[1]+linkOdoo[0], "assets/img/odoo/icon_crm.png", "Odoo Crm", titles[0]+" CRM" , "En está sección encontraras Conceptos y definiciones, Normativas y Preguntas frecuentes")
+    +boxWithText(linksUrl[1]+linkOdoo[0], "assets/img/odoo/icon_crm.png", "Odoo Crm", titles[0]+" CRM" , "Sección de Conceptos y definiciones")
     //- +boxWithText("#", "assets/img/saeplus/saeplus_logo.png", "", titles[1], "Abonados, contratos, facturación y control de pagos")
-     +boxWithAll("2", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[6], "Organigramas, Funciones y Cargos, Normativas y Procedimientos, Formatos y Controles, Flujogramas de procesos")
+    +boxWithAll("3", "#", "assets/img/logo/logo_conex@0_5x.png", "", "Motivación para vendedores", "Objetivo: lograr que la fuerza de ventas de las empresas esté altamente motivado y comprometidos a incrementar las ventas, despertar nuevas y poderosas secuencias de pensamientos creativos, dinámica individual y de grupo  que estimulen a la participación y disposición a proponer proyectos de mejora para optimizar las ventas.")
 
-   //-.-boxPadding.-col2
-    +boxWithText("#", "assets/img/odoo/icon_project.png", "", titles[3] , "Zonas con cobertura y edificios verticalizados")
-    +boxWithImg("5", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[8])
-    +boxWithImg("3", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[4])
+   .-boxPadding.-col2
+    +boxWithText(linksUrl[1]+linkOdoo[1], "assets/img/odoo/icon_crm.png", "", titles[0]+" CRM", "Sección de Normativa")
+    +boxWithAll("2", "#", "assets/img/logo/logo_conex@0_5x.png", "", "¿Cómo incrementar las ventas?", "Objetivo: enseñar al vendedor el conocimiento de las habilidades y técnicas que le permitan competir e incrementar sus niveles de ventas, así como el de brindar un servicio de excelente calidad a los clientes, y que esto sea un factor determinante en la diferencia de haber escogido nuestra empresa y no a la competencia.")
+    //- +boxWithImg("5", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[8])
+     +boxWithImg("3", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[4])
 
-   //-.-boxPadding.-col3
-    +boxWithText("#", "assets/img/odoo/icon_chat.png", "", titles[5] , "Clientes y usuarios")
-    +boxWithText("#", "assets/img/profit/profit_logo.png", "", titles[2], "Administración, pagos, compras y almacén")
-    +boxWithAll("4", "#", "assets/img/logo/logo_conex@0_5x.png", "", titles[7], "Organigramas, Funciones y Cargos, Normativas y Procedimientos, Formatos y Controles, Flujogramas de procesos")
+   .-boxPadding.-col3
+    +boxWithText(linksUrl[1]+linkOdoo[2], "assets/img/odoo/icon_crm.png", "", titles[0]+" CRM", "Sección de Preguntas más frecuentes")
+    //- +boxWithText("#", "assets/img/profit/profit_logo.png", "", titles[2], "Administración, pagos, compras y almacén")
+    +boxWithAll("4", "#", "assets/img/logo/logo_conex@0_5x.png", "", "Actualización continua", "Objetivo: entrenamiento continuo en las mejores prácticas de venta en el que se “aprende haciendo”, adoptando técnicas innovadoras, mejorando actitudes y formando los hábitos de un vendedor profesional. Se explicarán los conceptos de los diferentes sistema de ventas comparándolos entre ellos y así como cuáles son sus ventajas y desventajas.")
   
-  //- Footer firm
-.o-footerFirmDev.-index
- .justify-content-center.align-items-center.d-flex.m-footerFirm
-  p #{monlogo[1]}
-  a(href=monlogo[0], target="_blank"): button(class="btn -btnMonlogo", type="button") Monlogo
+  // Footer firm
+  .o-footerFirmDev.-index
+   .justify-content-center.align-items-center.d-flex.m-footerFirm
+    p #{monlogo[1]}
+    a(href=monlogo[0], target="_blank"): button(class="btn -btnMonlogo", type="button") Monlogo
